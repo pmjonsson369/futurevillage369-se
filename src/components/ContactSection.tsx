@@ -27,7 +27,7 @@ const ContactSection = () => (
           size="lg"
           className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-base rounded-lg"
         >
-          <a href="mailto:kontakt@369futurevillage.se">Kontakta mig</a>
+          <a href="mailto:369futurevillage@gmail.com">Kontakta mig</a>
         </Button>
       </div>
     </div>

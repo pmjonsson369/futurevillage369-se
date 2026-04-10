@@ -18,13 +18,13 @@ const Contact = () => (
           </p>
           <div className="space-y-4">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-lg w-full md:w-auto">
-              <a href="mailto:kontakt@369futurevillage.se" className="inline-flex items-center gap-2">
+              <a href="mailto:369futurevillage@gmail.com" className="inline-flex items-center gap-2">
                 <Mail size={18} />
                 Kontakta mig
               </a>
             </Button>
             <p className="text-sm text-muted-foreground">
-              kontakt@369futurevillage.se
+              369futurevillage@gmail.com
             </p>
           </div>
         </div>
