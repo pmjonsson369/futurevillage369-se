@@ -6,41 +6,41 @@ const systems = [
   {
     icon: Droplets,
     title: "Vatten",
-    desc: "Slutna system för insamling, filtrering och återanvändning av vatten",
+    desc: "System för att samla in, rena och återanvända vatten",
   },
   {
     icon: Sprout,
-    title: "Mat",
-    desc: "Regenerativa matskogar och vertikala odlingssystem",
+    title: "Odling",
+    desc: "Matskogar och moderna odlingssystem",
   },
   {
     icon: Sun,
     title: "Energi",
-    desc: "Sol, vind och batterilagring integrerat i arkitekturen",
+    desc: "Sol, vind och energilagring integrerat i boendet",
   },
   {
     icon: Cpu,
     title: "Smarta system",
-    desc: "IoT-övervakning, AI-optimering och realtidsdata",
+    desc: "Sensorer, data och uppkopplad styrning i realtid",
   },
 ];
 
 const startHere = [
   {
     title: "Smart Villa",
-    desc: "Ett uppkopplat hemsystem som kombinerar vatten, odling och framtida automation",
+    desc: "Ett sammanhängande system för hemmet där vatten, odling och teknik samverkar",
     link: "/smart-villa",
     cta: "Utforska",
   },
   {
-    title: "Smart Growing Systems",
-    desc: "Från smarta trädgårdar till året-runt-växthus — intelligent odling",
+    title: "Smarta odlingssystem",
+    desc: "Från trädgård till växthus – smart och automatiserad odling",
     link: "/smart-growing-systems",
     cta: "Läs mer",
   },
   {
     title: "Ekobyar",
-    desc: "Pilotprojekt för att kartlägga och koppla samman system i ekosamhällen",
+    desc: "Pilotprojekt där vi kartlägger och utvecklar system i mindre samhällen",
     link: "/ekobyar",
     cta: "Läs mer",
   },
@@ -53,17 +53,17 @@ const Index = () => (
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
       <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-8">
-          Smarta system för självbärande hem och ekobyar
+          Smarta system för självförsörjande hem och ekobyar
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground font-light mb-12 max-w-3xl mx-auto leading-relaxed">
-          Med start i vatten, mat och automation — bygger vi grunden för framtidens boende där natur och teknik samverkar.
+          Vi börjar med vatten, odling och automation – och skapar grunden för ett sätt att leva där natur och teknik samspelar.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-lg">
-            <Link to="/smart-growing-systems">Utforska Smart Garden</Link>
+            <Link to="/smart-growing-systems">Utforska Smart trädgård</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="border-border text-foreground hover:bg-accent text-base px-8 py-6 rounded-lg">
-            <Link to="/ekobyar">Utforska Ekobyar</Link>
+            <Link to="/ekobyar">Utforska ekobyar</Link>
           </Button>
         </div>
       </div>
@@ -73,30 +73,30 @@ const Index = () => (
     <section className="section-padding bg-card">
       <div className="max-w-4xl mx-auto">
         <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Vad vi gör</p>
-        <h2 className="text-3xl md:text-4xl font-serif mb-6">Det vi bygger just nu</h2>
+        <h2 className="text-3xl md:text-4xl font-serif mb-6">Det vi utvecklar just nu</h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-16 max-w-3xl">
-          Vi utvecklar och testar enkla, skalbara system som hjälper hem och ekobyar att bli mer självbärande.
+          Vi utvecklar och testar enkla lösningar som hjälper hem och ekobyar att bli mer självförsörjande – med system som går att bygga ut över tid.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-accent/50 rounded-xl p-8 border border-border">
             <Sprout className="text-primary mb-4" size={28} />
-            <h3 className="text-xl font-serif mb-3">Smart Garden Systems</h3>
+            <h3 className="text-xl font-serif mb-3">Smarta odlingssystem</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Automatiserad bevattning och övervakning för enkel, självbärande matproduktion.
+              Automatiserad bevattning och övervakning för enkel och hållbar matproduktion.
             </p>
           </div>
           <div className="bg-accent/50 rounded-xl p-8 border border-border">
             <Droplets className="text-primary mb-4" size={28} />
-            <h3 className="text-xl font-serif mb-3">Water Flow Mapping</h3>
+            <h3 className="text-xl font-serif mb-3">Kartläggning av vattenflöden</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Kartläggning och optimering av vattensystem för hem och samhällen.
+              Vi analyserar och förbättrar hur vatten rör sig i hem och områden.
             </p>
           </div>
           <div className="bg-accent/50 rounded-xl p-8 border border-border">
             <Cpu className="text-primary mb-4" size={28} />
-            <h3 className="text-xl font-serif mb-3">Connected Living Design</h3>
+            <h3 className="text-xl font-serif mb-3">Design av sammanhängande system</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Tidiga systemdesigner för intelligenta och resurseffektiva miljöer.
+              Vi utvecklar lösningar där resurser används smart och fungerar tillsammans som en helhet.
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ const Index = () => (
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Visionen</p>
         <h2 className="text-3xl md:text-4xl font-serif leading-snug">
-          En framtid där hem producerar sin egen mat, hanterar sitt eget vatten och drivs av intelligenta system — som standard.
+          En framtid där hem producerar sin egen mat, hanterar sitt eget vatten och drivs av smarta system – som en naturlig del av vardagen.
         </h2>
       </div>
     </section>
@@ -120,8 +120,8 @@ const Index = () => (
           <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Systemet</p>
           <h2 className="text-3xl md:text-4xl font-serif mb-6">Sammankopplade system</h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            Vi designar sammankopplade system för vatten, mat, energi och intelligent övervakning.
-            Varje system fungerar självständigt — och tillsammans som ett intelligent, regenerativt ekosystem.
+            Vi designar system för vatten, odling, energi och övervakning som fungerar både var för sig och tillsammans.
+            Målet är att skapa en helhet där allt hänger ihop – enkelt, effektivt och i balans med naturen.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -1,10 +1,10 @@
 import { MapPin, Sprout, Radio, Eye } from "lucide-react";
 
 const steps = [
-  { icon: MapPin, title: "Kartlägg vatten" },
-  { icon: Sprout, title: "Koppla odling" },
+  { icon: MapPin, title: "Kartlägga vattenflöden" },
+  { icon: Sprout, title: "Koppla ihop odlingsytor" },
   { icon: Radio, title: "Installera sensorer" },
-  { icon: Eye, title: "Observera över tid" },
+  { icon: Eye, title: "Följa upp och analysera" },
 ];
 
 const Ecovillage = () => (
@@ -18,17 +18,17 @@ const Ecovillage = () => (
           Smarta system för ekobyar
         </h1>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-          Vi hjälper ekobyar förstå och utveckla sina system — steg för steg.
+          Vi hjälper ekobyar att förstå, förbättra och utveckla sina system – steg för steg.
         </p>
       </div>
     </section>
 
-    {/* Pilotmetod */}
+    {/* Arbetssätt */}
     <section className="section-padding bg-card">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Pilotmetod</p>
-          <h2 className="text-3xl md:text-4xl font-serif">Börja smått. Lär snabbt.</h2>
+          <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Arbetssätt</p>
+          <h2 className="text-3xl md:text-4xl font-serif">Börja smått. Lär över tid.</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((s, i) => (
