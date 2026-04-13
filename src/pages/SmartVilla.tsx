@@ -1,99 +1,50 @@
 import { Link } from "react-router-dom";
+import villaImg from "@/assets/smart-villa.jpg";
 import { Button } from "@/components/ui/button";
-import { Droplets, Sprout, Cpu } from "lucide-react";
-
-const systems = [
-  {
-    icon: Droplets,
-    title: "Vattenhantering",
-    desc: "Insamling av regnvatten, återanvändning av gråvatten och smart distribution",
-  },
-  {
-    icon: Sprout,
-    title: "Smart trädgård",
-    desc: "Automatiserad bevattning och övervakning",
-  },
-  {
-    icon: Cpu,
-    title: "Automation",
-    desc: "Sensorer och smart styrning som anpassar systemet över tid",
-  },
-];
 
 const SmartVilla = () => (
   <>
     {/* Hero */}
-    <section className="min-h-[70vh] flex items-center justify-center bg-background relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
+    <section className="relative min-h-[60vh] flex items-center">
+      <div className="absolute inset-0">
+        <img src={villaImg} alt="Smart Villa" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-foreground/50" />
+      </div>
       <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
-        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-6">Smart Villa</p>
-        <h1 className="text-4xl md:text-5xl font-serif leading-tight mb-6">
-          Framtidens boende börjar hemma
-        </h1>
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-          Ett system där vatten, odling och teknik samverkar för att skapa ett mer självförsörjande hem.
-        </p>
-        <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-lg">
-          <a href="#system">Utforska systemet</a>
-        </Button>
-      </div>
-    </section>
-
-    {/* Vad det är */}
-    <section className="section-padding bg-card">
-      <div className="max-w-3xl mx-auto">
-        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Vad det är</p>
-        <h2 className="text-3xl md:text-4xl font-serif mb-6">Ett integrerat system för hemmet</h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Smart Villa samlar vattenhantering, matproduktion och teknik i en helhet – anpassad för nordiska förhållanden.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Istället för separata lösningar får du ett system där allt fungerar tillsammans.
+        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary-foreground/70 mb-4">Framtidsvision</p>
+        <h1 className="text-4xl md:text-5xl font-serif text-primary-foreground mb-6">Smart Villa</h1>
+        <p className="text-lg text-primary-foreground/85 max-w-2xl mx-auto leading-relaxed">
+          Hem där trädgård, vatten och energi samverkar naturligt.
         </p>
       </div>
     </section>
 
-    {/* System som ingår */}
-    <section id="system" className="section-padding bg-background">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">System som ingår</p>
-          <h2 className="text-3xl md:text-4xl font-serif">Tre delar som samverkar</h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          {systems.map((s) => (
-            <div key={s.title} className="bg-card rounded-xl p-8 border border-border text-center">
-              <s.icon className="text-primary mx-auto mb-4" size={32} />
-              <h3 className="text-xl font-serif mb-3">{s.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    {/* Varför det är viktigt */}
-    <section className="section-padding bg-card">
-      <div className="max-w-3xl mx-auto">
-        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Varför det är viktigt</p>
-        <h2 className="text-3xl md:text-4xl font-serif mb-6">Mindre beroende. Mer kontroll.</h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Ett mer självförsörjande hem minskar beroendet av externa system och ger dig bättre kontroll över vatten, mat och resurser.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          På sikt innebär det lägre kostnader, mindre slöseri och ett hem som samspelar med naturen.
-        </p>
-      </div>
-    </section>
-
-    {/* Framtid */}
+    {/* Content */}
     <section className="section-padding bg-background">
-      <div className="max-w-3xl mx-auto text-center">
-        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Framtid</p>
-        <h2 className="text-3xl md:text-4xl font-serif mb-6">Byggt för att utvecklas över tid</h2>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Systemet kan byggas ut med energilösningar, klimatanpassning och mer avancerad automation.
+      <div className="max-w-3xl mx-auto">
+        <p className="text-sm font-medium tracking-widest uppercase text-primary mb-3">Konceptet</p>
+        <h2 className="text-3xl font-serif mb-6">Framtidens boende – redan idag</h2>
+        <p className="text-base text-muted-foreground leading-relaxed mb-4">
+          Smart Villa handlar om att skapa hem som fungerar i harmoni med sin omgivning.
+          Trädgården blir en del av husets system – med vattenhantering, energiproduktion och
+          naturlig odling som samverkar.
         </p>
+        <p className="text-base text-muted-foreground leading-relaxed mb-4">
+          På sikt kan samma tänk användas för att skapa hem där trädgård, vatten
+          och energi samverkar – ett boende som är både hållbart och bekvämt.
+        </p>
+        <p className="text-base text-muted-foreground leading-relaxed mb-10">
+          Vi börjar med det som fungerar idag – smart planering av trädgård och utemiljö –
+          och bygger vidare mot mer integrerade lösningar.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-lg">
+            <Link to="/smart-garden-analysis">Boka Smart Garden Analysis</Link>
+          </Button>
+          <Button asChild size="lg" variant="outline" className="text-base px-8 py-6 rounded-lg">
+            <Link to="/kontakt">Kontakta mig</Link>
+          </Button>
+        </div>
       </div>
     </section>
   </>

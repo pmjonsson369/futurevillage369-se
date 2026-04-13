@@ -1,97 +1,76 @@
 import { Link } from "react-router-dom";
+import gardenImg from "@/assets/smart-garden.jpg";
+import analysisImg from "@/assets/analysis.jpg";
 import { Button } from "@/components/ui/button";
-import { Check, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
-const benefits = [
-  "Sparar tid",
-  "Fungerar när du är bortrest",
-  "Starkare och friskare växter",
-  "Ren och modern design",
-  "Möjligt att bygga ut över tid",
-];
-
-const howItWorks = [
+const systems = [
   {
-    title: "Automatisk bevattning",
-    desc: "Sensorer känner av när växterna behöver vatten",
+    title: "Smart Garden",
+    desc: "Planera din trädgård så att odling, gångar, ytor och skötsel fungerar tillsammans. Resultatet blir en trädgård som är lättare att ta hand om och mer harmonisk att vara i.",
+    img: gardenImg,
+    link: "/smart-garden",
   },
   {
-    title: "Appstyrning",
-    desc: "Du kan följa och justera systemet var du än är",
-  },
-  {
-    title: "Diskret installation",
-    desc: "All teknik är integrerad och knappt synlig",
+    title: "Smart Garden Analysis",
+    desc: "Få en professionell genomgång av din trädgård med konkreta förslag på förbättringar. Du får en tydlig plan för struktur, flöde och odling.",
+    img: analysisImg,
+    link: "/smart-garden-analysis",
+    price: "1 499 kr",
   },
 ];
 
 const SmartGrowingSystems = () => (
   <>
     {/* Hero */}
-    <section className="min-h-[70vh] flex items-center justify-center bg-background relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
-      <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
-        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-6">Smarta odlingssystem</p>
-        <h1 className="text-4xl md:text-5xl font-serif leading-tight mb-6">
-          Från trädgård till växthus – odla smartare
-        </h1>
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-          Ett system som börjar enkelt och kan utvecklas till odling året runt.
+    <section className="relative py-24 md:py-32 bg-warm">
+      <div className="max-w-4xl mx-auto text-center px-6">
+        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Tjänster</p>
+        <h1 className="text-4xl md:text-5xl font-serif mb-6">Smart Growing Systems</h1>
+        <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+          Genomtänkta system för trädgård och odling – designade för att vara enkla, funktionella och hållbara.
+        </p>
+      </div>
+    </section>
+
+    {/* Services */}
+    <section className="section-padding bg-background">
+      <div className="max-w-5xl mx-auto space-y-20">
+        {systems.map((s, i) => (
+          <div key={s.title} className={`grid md:grid-cols-2 gap-12 md:gap-16 items-center ${i % 2 !== 0 ? "md:[&>*:first-child]:order-2" : ""}`}>
+            <div className="rounded-xl overflow-hidden">
+              <img src={s.img} alt={s.title} loading="lazy" className="w-full h-72 md:h-96 object-cover" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-serif mb-4">{s.title}</h2>
+              <p className="text-base text-muted-foreground leading-relaxed mb-6">{s.desc}</p>
+              {s.price && (
+                <div className="bg-warm rounded-xl p-5 mb-6">
+                  <p className="text-sm text-muted-foreground mb-1">Intropris</p>
+                  <p className="text-2xl font-serif text-foreground">{s.price}</p>
+                </div>
+              )}
+              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <Link to={s.link} className="inline-flex items-center gap-2">
+                  Läs mer <ArrowRight size={16} />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* CTA */}
+    <section className="section-padding bg-warm">
+      <div className="max-w-2xl mx-auto text-center">
+        <h2 className="text-3xl font-serif mb-6">Börja med en analys</h2>
+        <p className="text-base text-muted-foreground leading-relaxed mb-8">
+          Boka en Smart Garden Analysis och få en konkret plan för din trädgård.
         </p>
         <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-lg">
-          <Link to="/smart-garden-analysis">Trädgårdsanalys</Link>
+          <Link to="/smart-garden-analysis">Boka din analys – 1 499 kr</Link>
         </Button>
-        <p className="text-sm text-muted-foreground mt-4">
-          Börja med en personlig genomgång av din trädgård – vi tittar på struktur, vattenflöde och möjligheter.
-        </p>
-      </div>
-    </section>
-
-    {/* Smart trädgård */}
-    <section className="section-padding bg-card">
-      <div className="max-w-3xl mx-auto">
-        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Smart trädgård</p>
-        <h2 className="text-3xl md:text-4xl font-serif mb-6">Ett enklare sätt att odla</h2>
-        <p className="text-xl text-muted-foreground leading-relaxed mb-4">
-          Här samverkar natur och teknik.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Smart trädgård är ett automatiserat system för dig som vill ha en vacker och fungerande trädgård utan att behöva lägga mycket tid på skötsel.
-        </p>
-      </div>
-    </section>
-
-    {/* Hur det fungerar */}
-    <section className="section-padding bg-background">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Hur det fungerar</p>
-          <h2 className="text-3xl md:text-4xl font-serif">Teknik som arbetar i bakgrunden</h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          {howItWorks.map((item) => (
-            <div key={item.title} className="bg-card rounded-xl p-8 border border-border">
-              <h3 className="text-xl font-serif mb-3">{item.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    {/* Fördelar */}
-    <section className="section-padding bg-card">
-      <div className="max-w-3xl mx-auto">
-        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Fördelar</p>
-        <h2 className="text-3xl md:text-4xl font-serif mb-10">Mindre arbete. Bättre resultat.</h2>
-        <div className="space-y-4">
-          {benefits.map((b) => (
-            <div key={b} className="flex items-center gap-3">
-              <Check size={18} className="text-primary flex-shrink-0" />
-              <span className="text-foreground">{b}</span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   </>
