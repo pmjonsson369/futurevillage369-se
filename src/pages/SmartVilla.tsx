@@ -6,17 +6,17 @@ const systems = [
   {
     icon: Droplets,
     title: "Vattenhantering",
-    desc: "Regnvatteninsamling, återvinning av gråvatten och smart distribution.",
+    desc: "Insamling av regnvatten, återanvändning av gråvatten och smart distribution",
   },
   {
     icon: Sprout,
-    title: "Smart Garden",
-    desc: "Automatiserad bevattning och övervakning för året-runt-odling.",
+    title: "Smart trädgård",
+    desc: "Automatiserad bevattning och övervakning",
   },
   {
     icon: Cpu,
     title: "Automation",
-    desc: "Sensorer, data och intelligent styrning — redo för framtiden.",
+    desc: "Sensorer och smart styrning som anpassar systemet över tid",
   },
 ];
 
@@ -28,10 +28,10 @@ const SmartVilla = () => (
       <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
         <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-6">Smart Villa</p>
         <h1 className="text-4xl md:text-5xl font-serif leading-tight mb-6">
-          Framtidens boende — börjar hemma
+          Framtidens boende börjar hemma
         </h1>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-          Ett sammankopplat system där vatten, odling och teknik samverkar för att skapa en mer självbärande villa.
+          Ett system där vatten, odling och teknik samverkar för att skapa ett mer självförsörjande hem.
         </p>
         <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-lg">
           <a href="#system">Utforska systemet</a>
@@ -43,12 +43,12 @@ const SmartVilla = () => (
     <section className="section-padding bg-card">
       <div className="max-w-3xl mx-auto">
         <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Vad det är</p>
-        <h2 className="text-3xl md:text-4xl font-serif mb-6">Ett integrerat system för hemmiljöer</h2>
+        <h2 className="text-3xl md:text-4xl font-serif mb-6">Ett integrerat system för hemmet</h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Smart Villa sammanför vattenhantering, matproduktion och automation i ett enda system — anpassat för skandinaviska förhållanden.
+          Smart Villa samlar vattenhantering, matproduktion och teknik i en helhet – anpassad för nordiska förhållanden.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Istället för separata lösningar fungerar allt som en intelligent helhet.
+          Istället för separata lösningar får du ett system där allt fungerar tillsammans.
         </p>
       </div>
     </section>
@@ -58,7 +58,7 @@ const SmartVilla = () => (
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">System som ingår</p>
-          <h2 className="text-3xl md:text-4xl font-serif">Tre system som arbetar tillsammans</h2>
+          <h2 className="text-3xl md:text-4xl font-serif">Tre delar som samverkar</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {systems.map((s) => (
@@ -78,21 +78,21 @@ const SmartVilla = () => (
         <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Varför det är viktigt</p>
         <h2 className="text-3xl md:text-4xl font-serif mb-6">Mindre beroende. Mer kontroll.</h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          En självbärande villa minskar beroendet av externa system — och ger dig mer kontroll över vatten, mat och resurser.
+          Ett mer självförsörjande hem minskar beroendet av externa system och ger dig bättre kontroll över vatten, mat och resurser.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          På sikt minskar systemen kostnader, avfall och skapar ett hem som arbetar med naturen.
+          På sikt innebär det lägre kostnader, mindre slöseri och ett hem som samspelar med naturen.
         </p>
       </div>
     </section>
 
-    {/* Framtidsvision */}
+    {/* Framtid */}
     <section className="section-padding bg-background">
       <div className="max-w-3xl mx-auto text-center">
-        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Framtidsvision</p>
-        <h2 className="text-3xl md:text-4xl font-serif mb-6">Designad för att växa</h2>
+        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Framtid</p>
+        <h2 className="text-3xl md:text-4xl font-serif mb-6">Byggt för att utvecklas över tid</h2>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Smart Villa är byggd för att expandera med energisystem, klimatanpassning och mer automation.
+          Systemet kan byggas ut med energilösningar, klimatanpassning och mer avancerad automation.
         </p>
       </div>
     </section>

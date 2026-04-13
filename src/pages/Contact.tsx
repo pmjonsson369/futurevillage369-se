@@ -22,8 +22,11 @@ const Contact = () => {
           <div className="text-center mb-12">
             <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-6">Kontakt</p>
             <h1 className="text-4xl md:text-5xl font-serif leading-tight mb-6">
-              Låt oss bygga framtiden tillsammans
+              Låt oss bygga något tillsammans
             </h1>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Oavsett om du har ett projekt, en idé eller bara är nyfiken – hör gärna av dig.
+            </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
