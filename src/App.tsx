@@ -6,9 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
 import Index from "./pages/Index";
 import SmartGrowingSystems from "./pages/SmartGrowingSystems";
-import SmartGarden from "./pages/SmartGarden";
-import SmartGardenAnalysis from "./pages/SmartGardenAnalysis";
-import SmartGreenhouse from "./pages/SmartGreenhouse";
 import SmartVilla from "./pages/SmartVilla";
 import Ecovillage from "./pages/Ecovillage";
 import About from "./pages/About";
@@ -27,11 +24,8 @@ const App = () => (
           <Route element={<Layout />}>
             <Route path="/" element={<Index />} />
             <Route path="/smart-growing-systems" element={<SmartGrowingSystems />} />
-            <Route path="/smart-garden" element={<SmartGarden />} />
-            <Route path="/smart-garden-analysis" element={<SmartGardenAnalysis />} />
-            <Route path="/smart-greenhouse" element={<SmartGreenhouse />} />
             <Route path="/smart-villa" element={<SmartVilla />} />
-            <Route path="/ecovillage" element={<Ecovillage />} />
+            <Route path="/ekobyar" element={<Ecovillage />} />
             <Route path="/om" element={<About />} />
             <Route path="/kontakt" element={<Contact />} />
           </Route>
