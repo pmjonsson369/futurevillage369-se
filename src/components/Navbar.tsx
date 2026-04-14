@@ -29,20 +29,20 @@ const Navbar = () => {
               to="/smart-growing-systems"
               className={`text-sm font-medium transition-colors flex items-center gap-1 ${isGrowingActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
             >
-              Smart Growing Systems
+              Smarta odlingssystem
               <ChevronDown size={14} className={`transition-transform ${growingOpen ? "rotate-180" : ""}`} />
             </Link>
             {growingOpen && (
               <div className="absolute top-full left-0 pt-2 w-56">
                 <div className="bg-background border border-border rounded-lg shadow-lg py-2">
                   <Link to="/smart-garden" className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-muted transition-colors">
-                    Smart Garden
+                    Smart trädgård
                   </Link>
                   <Link to="/smart-greenhouse" className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-muted transition-colors">
-                    Smart Greenhouse
+                    Smart växthus
                   </Link>
                   <Link to="/smart-garden-analysis" className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-muted transition-colors">
-                    Smart Garden Analysis
+                    Trädgårdsanalys
                   </Link>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/ecovillage" className={`text-sm font-medium transition-colors ${isActive("/ecovillage") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
-              Ecovillage
+              Ekobyar
             </Link>
           </li>
           <li>
@@ -90,19 +90,19 @@ const Navbar = () => {
                 onClick={() => setGrowingOpen(!growingOpen)}
                 className="flex items-center justify-between w-full py-2.5 text-base text-muted-foreground hover:text-foreground transition-colors"
               >
-                Smart Growing Systems
+                Smarta odlingssystem
                 <ChevronDown size={16} className={`transition-transform ${growingOpen ? "rotate-180" : ""}`} />
               </button>
               {growingOpen && (
                 <div className="pl-4 pb-2 space-y-1">
                   <Link to="/smart-garden" onClick={() => setOpen(false)} className="block py-2 text-sm text-muted-foreground hover:text-foreground">
-                    Smart Garden
+                    Smart trädgård
                   </Link>
                   <Link to="/smart-greenhouse" onClick={() => setOpen(false)} className="block py-2 text-sm text-muted-foreground hover:text-foreground">
-                    Smart Greenhouse
+                    Smart växthus
                   </Link>
                   <Link to="/smart-garden-analysis" onClick={() => setOpen(false)} className="block py-2 text-sm text-muted-foreground hover:text-foreground">
-                    Smart Garden Analysis
+                    Trädgårdsanalys
                   </Link>
                 </div>
               )}
@@ -114,7 +114,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/ecovillage" onClick={() => setOpen(false)} className="block py-2.5 text-base text-muted-foreground hover:text-foreground transition-colors">
-                Ecovillage
+                Ekobyar
               </Link>
             </li>
             <li>
