@@ -35,14 +35,33 @@ const About = () => (
       </div>
     </section>
 
-    {/* CTA */}
+    {/* Samarbete */}
     <section className="section-padding bg-background">
-      <div className="max-w-2xl mx-auto text-center">
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-lg">
-            <Link to="/kontakt">Kontakta mig</Link>
-          </Button>
+      <div className="max-w-3xl mx-auto text-center">
+        <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Samarbete</p>
+        <h2 className="text-3xl md:text-4xl font-serif mb-6">Vill du jobba med mig?</h2>
+        <p className="text-base text-muted-foreground leading-relaxed mb-6">
+          Jag samarbetar med personer och projekt som vill utveckla
+          <br className="hidden md:block" />
+          smarta, hållbara och genomtänkta miljöer.
+        </p>
+        <p className="text-base text-muted-foreground leading-relaxed mb-4">
+          Det kan till exempel vara:
+        </p>
+        <div className="text-base text-muted-foreground leading-relaxed mb-10 space-y-2">
+          <p>– Arkitekter</p>
+          <p>– Fastighetsutvecklare</p>
+          <p>– Ekobyar och community-projekt</p>
+          <p>– Privatpersoner med visioner</p>
         </div>
+        <p className="text-base text-muted-foreground leading-relaxed mb-10">
+          Om du är intresserad av att samarbeta eller vill veta mer,
+          <br className="hidden md:block" />
+          hör gärna av dig.
+        </p>
+        <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-lg">
+          <Link to="/kontakt">Kontakta mig</Link>
+        </Button>
       </div>
     </section>
   </>

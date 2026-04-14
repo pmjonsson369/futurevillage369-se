@@ -5,7 +5,7 @@ import gardenImg from "@/assets/smart-garden.jpg";
 import villaImg from "@/assets/smart-villa.jpg";
 import ecoImg from "@/assets/ecovillage.jpg";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Droplets, Leaf, Sun, Wifi } from "lucide-react";
 
 const whatWeDo = [
   {
@@ -26,18 +26,22 @@ const systemParts = [
   {
     title: "Vatten",
     desc: "System för att samla in, rena och återanvända vatten",
+    icon: Droplets,
   },
   {
     title: "Odling",
     desc: "Matskogar och moderna odlingssystem",
+    icon: Leaf,
   },
   {
     title: "Energi",
     desc: "Sol, vind och energilagring integrerat i boendet",
+    icon: Sun,
   },
   {
     title: "Smarta system",
     desc: "Sensorer, data och uppkopplad styrning i realtid",
+    icon: Wifi,
   },
 ];
 
@@ -159,6 +163,7 @@ const Index = () => (
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mt-16">
           {systemParts.map((part) => (
             <div key={part.title} className="text-center">
+              <part.icon size={24} className="mx-auto mb-4 text-primary" strokeWidth={1.5} />
               <h3 className="text-lg font-serif mb-3">{part.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{part.desc}</p>
             </div>
