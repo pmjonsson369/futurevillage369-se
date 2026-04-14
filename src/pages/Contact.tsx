@@ -8,13 +8,14 @@ const Contact = () => (
     <section className="section-padding bg-warm">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-serif mb-6">Kontakt</h1>
-          <p className="text-base text-muted-foreground leading-relaxed mb-4">
-            Vill du ha hjälp att utveckla din trädgård?
-          </p>
+          <p className="text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">Kontakt</p>
+          <h1 className="text-4xl md:text-5xl font-serif mb-6">
+            Låt oss bygga något tillsammans
+          </h1>
           <p className="text-base text-muted-foreground leading-relaxed mb-8">
-            Hör av dig så berättar jag mer eller bokar en analys.
-            Det enklaste sättet att komma igång är att boka en Smart Garden Analysis.
+            Oavsett om du har ett projekt, en idé eller bara är nyfiken –
+            <br className="hidden md:block" />
+            hör gärna av dig.
           </p>
           <div className="space-y-4">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-lg w-full md:w-auto">
