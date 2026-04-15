@@ -55,6 +55,11 @@ export default {
           DEFAULT: "hsl(var(--forest))",
           foreground: "hsl(var(--forest-foreground))",
         },
+        dark: {
+          DEFAULT: "hsl(var(--dark))",
+          foreground: "hsl(var(--dark-foreground))",
+          muted: "hsl(var(--dark-muted))",
+        },
         sand: "hsl(var(--sand))",
         earth: "hsl(var(--earth))",
         sidebar: {
