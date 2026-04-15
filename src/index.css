@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=DM+Serif+Display&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,42 +6,46 @@
 
 @layer base {
   :root {
-    --background: 40 33% 97%;
-    --foreground: 30 10% 15%;
+    --background: 40 20% 98%;
+    --foreground: 220 15% 18%;
 
-    --card: 40 30% 95%;
-    --card-foreground: 30 10% 15%;
+    --card: 40 15% 96%;
+    --card-foreground: 220 15% 18%;
 
-    --popover: 40 33% 97%;
-    --popover-foreground: 30 10% 15%;
+    --popover: 40 20% 98%;
+    --popover-foreground: 220 15% 18%;
 
-    --primary: 145 25% 32%;
-    --primary-foreground: 40 33% 97%;
+    --primary: 152 28% 38%;
+    --primary-foreground: 40 20% 98%;
 
-    --secondary: 32 30% 90%;
-    --secondary-foreground: 30 10% 15%;
+    --secondary: 35 18% 93%;
+    --secondary-foreground: 220 15% 18%;
 
-    --muted: 35 20% 92%;
-    --muted-foreground: 30 8% 45%;
+    --muted: 35 12% 94%;
+    --muted-foreground: 220 8% 50%;
 
-    --accent: 32 40% 85%;
-    --accent-foreground: 30 10% 15%;
+    --accent: 35 25% 90%;
+    --accent-foreground: 220 15% 18%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
-    --ring: 145 25% 32%;
+    --border: 35 12% 90%;
+    --input: 35 12% 90%;
+    --ring: 152 28% 38%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --warm: 35 30% 93%;
-    --warm-foreground: 30 10% 25%;
-    --forest: 145 25% 32%;
-    --forest-foreground: 40 33% 97%;
-    --sand: 38 35% 85%;
-    --earth: 30 15% 35%;
+    --warm: 38 18% 95%;
+    --warm-foreground: 220 10% 25%;
+    --forest: 152 28% 38%;
+    --forest-foreground: 40 20% 98%;
+    --sand: 38 25% 88%;
+    --earth: 220 10% 30%;
+
+    --dark: 220 20% 12%;
+    --dark-foreground: 40 15% 92%;
+    --dark-muted: 220 12% 55%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -72,7 +76,11 @@
 
 @layer utilities {
   .section-padding {
-    @apply px-6 md:px-12 lg:px-24 py-20 md:py-28 lg:py-32;
+    @apply px-6 md:px-12 lg:px-24 py-24 md:py-32 lg:py-40;
+  }
+
+  .section-padding-sm {
+    @apply px-6 md:px-12 lg:px-24 py-16 md:py-24;
   }
 
   .fade-in {
