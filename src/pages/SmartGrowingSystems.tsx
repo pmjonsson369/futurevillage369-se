@@ -8,13 +8,13 @@ import RevealSection from "@/components/RevealSection";
 const SmartGrowingSystems = () => (
   <>
     {/* Hero */}
-    <section className="relative py-32 md:py-40 bg-dark">
-      <div className="max-w-4xl mx-auto text-center px-6">
-        <p className="text-xs font-light tracking-[0.35em] uppercase text-white/60 mb-6">Smarta odlingssystem</p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-dark-foreground mb-8 leading-tight">
+    <section className="relative py-44 md:py-56 bg-dark">
+      <div className="max-w-5xl mx-auto text-center px-6">
+        <p className="text-xs font-light tracking-[0.4em] uppercase text-white/60 mb-10">Smarta odlingssystem</p>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-dark-foreground mb-12 leading-[1.05] tracking-tight">
           Från trädgård till växthus – odla smartare
         </h1>
-        <p className="text-lg text-dark-muted leading-relaxed max-w-2xl mx-auto font-light">
+        <p className="text-lg md:text-xl text-dark-muted leading-[1.9] max-w-2xl mx-auto font-light">
           Ett system som börjar enkelt
           <br className="hidden md:block" />
           och kan utvecklas till odling året runt.

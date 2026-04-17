@@ -35,17 +35,17 @@ const systems = [
 const SmartVilla = () => (
   <>
     {/* Hero */}
-    <section className="relative min-h-[70vh] flex items-center">
+    <section className="relative min-h-[85vh] flex items-center">
       <div className="absolute inset-0">
         <img src={villaImg} alt="Smart Villa" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-black/70" />
       </div>
-      <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
-        <p className="text-xs font-light tracking-[0.35em] uppercase text-white/60 mb-6">Smart Villa</p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-8 leading-tight">
+      <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-24">
+        <p className="text-xs font-light tracking-[0.4em] uppercase text-white/60 mb-10">Smart Villa</p>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white mb-12 leading-[1.05] tracking-tight">
           Framtidens boende börjar hemma
         </h1>
-        <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed font-light">
+        <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-[1.9] font-light">
           Ett system där vatten, odling och teknik samverkar
           <br className="hidden md:block" />
           för att skapa ett mer självförsörjande hem.
@@ -81,15 +81,15 @@ const SmartVilla = () => (
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">System som ingår</p>
             <h2 className="text-3xl md:text-4xl font-serif">Tre delar som samverkar</h2>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-16">
             {systems.map((s, i) => (
               <RevealSection key={s.title} delay={i * 120}>
                 <div className="text-center group">
-                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110">
-                    <s.icon size={24} className="text-primary" strokeWidth={1.5} />
+                  <div className="icon-orb mb-8">
+                    <s.icon size={28} className="text-primary" strokeWidth={1.25} />
                   </div>
                   <h3 className="text-xl font-serif mb-4">{s.title}</h3>
-                  <p className="text-base text-muted-foreground leading-relaxed font-light">{s.desc}</p>
+                  <p className="text-base text-muted-foreground leading-[1.8] font-light">{s.desc}</p>
                 </div>
               </RevealSection>
             ))}
