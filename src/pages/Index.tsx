@@ -75,28 +75,28 @@ const Index = () => (
     {/* Hero – dark cinematic */}
     <section className="relative min-h-screen flex items-center">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Skandinaviskt hus med genomtänkt trädgård" className="w-full h-full object-cover" width={1920} height={1080} />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+        <img src={heroImg} alt="Skandinaviskt hus med genomtänkt trädgård" className="w-full h-full object-cover scale-105" width={1920} height={1080} />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
       </div>
-      <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
-        <p className="text-sm font-light tracking-[0.35em] uppercase text-white/60 mb-8">
+      <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-32">
+        <p className="text-xs md:text-sm font-light tracking-[0.4em] uppercase text-white/60 mb-12 animate-fade-in">
           369 Future Village
         </p>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-[1.1] mb-8">
+        <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-[8.5rem] font-serif text-white leading-[0.95] mb-12 tracking-tight animate-fade-in">
           Smarta system för självförsörjande hem och ekobyar
         </h1>
-        <p className="text-lg md:text-xl text-white/75 font-light mb-14 max-w-2xl mx-auto leading-relaxed tracking-wide">
+        <p className="text-lg md:text-xl text-white/70 font-light mb-16 max-w-2xl mx-auto leading-[1.9] tracking-wide animate-fade-in">
           Vi börjar med vatten, odling och automation –
           <br className="hidden md:block" />
           och skapar grunden för ett sätt att leva
           <br className="hidden md:block" />
           där natur och teknik samspelar.
         </p>
-        <div className="flex flex-col sm:flex-row gap-5 justify-center">
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300">
+        <div className="flex flex-col sm:flex-row gap-5 justify-center animate-fade-in">
+          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
             <Link to="/smart-garden">Utforska Smart trädgård</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-white/30 text-white bg-white/5 hover:bg-white/10 text-base px-10 py-7 rounded-full transition-all duration-300">
+          <Button asChild size="lg" variant="outline" className="btn-premium border-white/25 text-white bg-white/5 hover:bg-white/15 hover:text-white text-base px-12 py-8 h-auto backdrop-blur-sm">
             <Link to="/ecovillage">Utforska ekobyar</Link>
           </Button>
         </div>
@@ -166,15 +166,15 @@ const Index = () => (
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mt-20">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-16 mt-24">
             {systemParts.map((part, i) => (
               <RevealSection key={part.title} delay={i * 100}>
                 <div className="text-center group">
-                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110">
-                    <part.icon size={24} className="text-primary" strokeWidth={1.5} />
+                  <div className="icon-orb mb-8">
+                    <part.icon size={28} className="text-primary" strokeWidth={1.25} />
                   </div>
                   <h3 className="text-lg font-serif mb-4">{part.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed font-light">{part.desc}</p>
+                  <p className="text-sm text-muted-foreground leading-[1.8] font-light">{part.desc}</p>
                 </div>
               </RevealSection>
             ))}

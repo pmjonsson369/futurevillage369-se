@@ -20,18 +20,18 @@ const steps = [
 const SmartGardenAnalysis = () => (
   <>
     {/* Hero */}
-    <section className="relative min-h-[70vh] flex items-center">
+    <section className="relative min-h-[85vh] flex items-center">
       <div className="absolute inset-0">
         <img src={analysisImg} alt="Trädgårdsanalys" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-black/70" />
       </div>
-      <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
-        <p className="text-xs font-light tracking-[0.35em] uppercase text-white/60 mb-6">Huvuderbjudande</p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-8 leading-tight">Trädgårdsanalys</h1>
-        <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed mb-10 font-light">
+      <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-24">
+        <p className="text-xs font-light tracking-[0.4em] uppercase text-white/60 mb-10">Huvuderbjudande</p>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white mb-12 leading-[1.05] tracking-tight">Trädgårdsanalys</h1>
+        <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-[1.9] mb-14 font-light">
           Få en tydlig plan för din trädgård – med konkreta förslag som fungerar långsiktigt.
         </p>
-        <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300">
+        <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
           <a href="#boka">Boka nu – 1 499 kr</a>
         </Button>
       </div>
