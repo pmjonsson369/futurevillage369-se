@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import gardenImg from "@/assets/smart-garden.jpg";
-import analysisImg from "@/assets/analysis.jpg";
+import greenhouseImg from "@/assets/smart-greenhouse.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
@@ -80,7 +80,7 @@ const SmartGrowingSystems = () => (
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground mb-4">Fördelar</p>
             <p className="text-sm text-muted-foreground mb-6 font-light">Mindre arbete. Bättre resultat.</p>
             <ul className="space-y-3 mb-12">
-              {["Sparar tid", "Fungerar när du är bortrest", "Starkare och friskare växter", "Ren och modern design", "Möjligt att bygga ut över tid"].map((b) => (
+              {["Sparar tid", "Fungerar när du är bortrest", "Starkare och friskare växter", "Ren och modern design", "Möjligt att bygga ut över tid", "Mer harmoni mellan natur och teknik"].map((b) => (
                 <li key={b} className="flex items-start gap-3 text-foreground text-sm font-light">
                   <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                   {b}
@@ -104,7 +104,7 @@ const SmartGrowingSystems = () => (
       <RevealSection>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
           <div className="md:order-2 rounded-2xl overflow-hidden">
-            <img src={analysisImg} alt="Smart växthus" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover transition-transform duration-700 hover:scale-105" />
+            <img src={greenhouseImg} alt="Smart växthus med smart odling och display" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover transition-transform duration-700 hover:scale-105" />
           </div>
           <div className="md:order-1">
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Smart växthus</p>
@@ -144,7 +144,7 @@ const SmartGrowingSystems = () => (
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300">
-              <Link to="/smart-garden-analysis">Boka Smart Garden Analysis</Link>
+              <Link to="/smart-garden-analysis">Boka Trädgårdsanalys</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/30 text-white bg-white/5 hover:bg-white/10 text-base px-10 py-7 rounded-full transition-all duration-300">
               <Link to="/kontakt">Kontakta mig</Link>

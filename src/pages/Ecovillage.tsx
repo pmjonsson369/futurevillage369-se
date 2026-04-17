@@ -63,15 +63,34 @@ const Ecovillage = () => (
           </ul>
 
           <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Varför det är viktigt</p>
-          <div className="space-y-4">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
+            Att förstå hur vatten, odling och resurser samverkar i en ekoby
+            <br className="hidden md:block" />
+            är avgörande för att kunna utveckla den på ett hållbart sätt.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-10 font-light">
+            Genom att kartlägga och arbeta med systemen som en helhet
+            <br className="hidden md:block" />
+            skapas bättre förutsättningar för både människor och miljö.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
+            Det leder till:
+          </p>
+          <div className="space-y-5">
             <p className="text-lg text-muted-foreground leading-relaxed font-light">
-              Bättre förståelse för hur systemen fungerar
+              – En tydligare bild av hur vatten, odling och resurser
+              <br className="hidden md:block" />
+              faktiskt fungerar i praktiken
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed font-light">
-              Mindre manuellt arbete
+              – Mindre manuellt arbete genom smartare
+              <br className="hidden md:block" />
+              och mer automatiserade lösningar
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed font-light">
-              Starkare och mer hållbara lösningar över tid
+              – Mer hållbara system som utvecklas
+              <br className="hidden md:block" />
+              och förbättras över tid
             </p>
           </div>
         </div>
@@ -83,10 +102,19 @@ const Ecovillage = () => (
       <RevealSection>
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Framtid</p>
-          <p className="text-2xl font-serif text-dark-foreground leading-relaxed mb-14">
-            Från mindre pilotprojekt till fullt utvecklade system
+          <p className="text-xl md:text-2xl font-serif text-dark-foreground leading-relaxed mb-8">
+            Det som börjar som mindre pilotprojekt
+            <br className="hidden md:block" />
+            kan över tid utvecklas till fullt integrerade system
             <br className="hidden md:block" />
             för hela samhällen.
+          </p>
+          <p className="text-lg text-dark-muted leading-relaxed mb-14 font-light">
+            Genom att steg för steg förstå, testa och förbättra varje del
+            <br className="hidden md:block" />
+            skapas en stabil grund där vatten, odling och resurser
+            <br className="hidden md:block" />
+            samverkar i en fungerande helhet.
           </p>
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300">
             <Link to="/kontakt">Kontakta mig</Link>

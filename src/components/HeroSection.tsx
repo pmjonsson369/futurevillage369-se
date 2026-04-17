@@ -27,7 +27,7 @@ const HeroSection = () => (
         size="lg"
         className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-lg"
       >
-        <a href="#analysis">Boka Smart Garden Analysis</a>
+        <a href="#analysis">Boka Trädgårdsanalys</a>
       </Button>
     </div>
   </section>

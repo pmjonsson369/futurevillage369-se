@@ -42,7 +42,7 @@ const SmartGreenhouse = () => (
               <Link to="/kontakt">Kontakta mig</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="text-base px-10 py-7 rounded-full transition-all duration-300">
-              <Link to="/smart-garden-analysis">Boka Smart Garden Analysis</Link>
+              <Link to="/smart-garden-analysis">Boka Trädgårdsanalys</Link>
             </Button>
           </div>
         </div>
