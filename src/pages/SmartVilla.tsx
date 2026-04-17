@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import villaImg from "@/assets/smart-villa.jpg";
 import { Button } from "@/components/ui/button";
-import { Droplets, Sprout, Settings } from "lucide-react";
+import { Droplets, Sprout, Settings, Sun, Cpu } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 
 const systems = [
@@ -19,6 +19,16 @@ const systems = [
     title: "Automation",
     desc: "Sensorer och smart styrning som anpassar systemet över tid",
     icon: Settings,
+  },
+  {
+    title: "Solpaneler",
+    desc: "Solpaneler integreras som en naturlig del av systemet och skapar en mer självförsörjande energilösning.",
+    icon: Sun,
+  },
+  {
+    title: "AI Hub",
+    desc: "I centrum finns en intelligent hub som styr, övervakar och optimerar hela systemet automatiskt. Systemet kan enkelt kontrolleras via dator, mobil eller direkt från en display i huben.",
+    icon: Cpu,
   },
 ];
 
@@ -50,12 +60,12 @@ const SmartVilla = () => (
           <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Vad det är</p>
           <h2 className="text-3xl md:text-4xl font-serif mb-8 leading-tight">Ett integrerat system för hemmet</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
-            Smart Villa samlar vattenhantering, matproduktion och teknik i en helhet –
+            Smart Villa kombinerar vattenhantering, matproduktion och teknik
             <br className="hidden md:block" />
-            anpassad för nordiska förhållanden.
+            i ett integrerat system – anpassat för nordiska förhållanden.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed font-light">
-            Istället för separata lösningar får du ett system
+            Istället för separata lösningar får du en genomtänkt helhet
             <br className="hidden md:block" />
             där allt fungerar tillsammans.
           </p>
@@ -71,7 +81,7 @@ const SmartVilla = () => (
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">System som ingår</p>
             <h2 className="text-3xl md:text-4xl font-serif">Tre delar som samverkar</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
             {systems.map((s, i) => (
               <RevealSection key={s.title} delay={i * 120}>
                 <div className="text-center group">

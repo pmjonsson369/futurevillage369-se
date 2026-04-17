@@ -113,7 +113,7 @@ const SmartGarden = () => (
           </p>
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300">
-              <Link to="/smart-garden-analysis">Boka Smart Garden Analysis</Link>
+              <Link to="/smart-garden-analysis">Boka Trädgårdsanalys</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/30 text-white bg-white/5 hover:bg-white/10 text-base px-10 py-7 rounded-full transition-all duration-300">
               <Link to="/kontakt">Kontakta mig</Link>

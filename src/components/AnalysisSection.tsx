@@ -26,7 +26,7 @@ const AnalysisSection = () => (
           Huvuderbjudande
         </p>
         <h2 className="text-3xl md:text-4xl font-serif mb-2">
-          Smart Garden Analysis
+          Trädgårdsanalys
         </h2>
         <p className="text-lg text-foreground font-medium mb-4">
           Få en tydlig plan för din trädgård
