@@ -11,6 +11,7 @@ const benefits = [
   "Starkare och friskare växter",
   "Ren och modern design",
   "Möjligt att bygga ut över tid",
+  "Mer harmoni mellan natur och teknik",
 ];
 
 const howItWorks = [

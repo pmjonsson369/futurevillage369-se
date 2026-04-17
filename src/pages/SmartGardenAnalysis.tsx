@@ -22,12 +22,12 @@ const SmartGardenAnalysis = () => (
     {/* Hero */}
     <section className="relative min-h-[70vh] flex items-center">
       <div className="absolute inset-0">
-        <img src={analysisImg} alt="Smart Garden Analysis" className="w-full h-full object-cover" />
+        <img src={analysisImg} alt="Trädgårdsanalys" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/60" />
       </div>
       <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
         <p className="text-xs font-light tracking-[0.35em] uppercase text-white/60 mb-6">Huvuderbjudande</p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-8 leading-tight">Smart Garden Analysis</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-8 leading-tight">Trädgårdsanalys</h1>
         <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed mb-10 font-light">
           Få en tydlig plan för din trädgård – med konkreta förslag som fungerar långsiktigt.
         </p>
@@ -92,7 +92,7 @@ const SmartGardenAnalysis = () => (
       <RevealSection>
         <div className="max-w-lg mx-auto text-center">
           <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Pris</p>
-          <h2 className="text-3xl md:text-4xl font-serif mb-6">Smart Garden Analysis</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-6">Trädgårdsanalys</h2>
           <div className="bg-warm rounded-2xl p-10 mb-10">
             <p className="text-sm text-muted-foreground mb-3 font-light">Intropris</p>
             <p className="text-5xl font-serif text-foreground mb-3">1 499 kr</p>

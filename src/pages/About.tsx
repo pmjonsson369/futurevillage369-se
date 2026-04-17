@@ -12,23 +12,27 @@ const About = () => (
           <div>
             <p className="text-xs font-medium tracking-[0.35em] uppercase text-primary mb-6">Om</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-8 leading-tight">
-              Vi bygger grunden för framtidens sätt att leva
+              Vi utvecklar smarta system för hem och miljöer
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 font-light">
-              369 Future Village började med en enkel fråga:
+              Vi utvecklar smarta system för hem och miljöer
+              <br className="hidden md:block" />
+              där vatten, odling och teknik fungerar tillsammans.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8 font-light">
+              369 Future Village började med en enkel idé:
             </p>
             <p className="text-xl text-foreground font-serif italic leading-relaxed mb-8">
-              Vad skulle hända om våra hem kunde ta hand om sig själva?
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
-              Vi utvecklar system där teknik stödjer naturen –
+              att skapa lösningar som faktiskt fungerar i vardagen –
               <br className="hidden md:block" />
-              inte tvärtom.
+              inte bara i teorin.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed font-light">
-              Målet är att skapa miljöer som är hållbara,
+              Genom att kombinera naturens principer med modern teknik
               <br className="hidden md:block" />
-              effektiva och vackra över tid.
+              bygger vi system som är hållbara, effektiva
+              <br className="hidden md:block" />
+              och utformade för att fungera över tid.
             </p>
           </div>
           <div className="rounded-2xl overflow-hidden">
