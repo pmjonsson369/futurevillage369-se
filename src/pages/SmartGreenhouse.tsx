@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import gardenImg from "@/assets/smart-garden.jpg";
+import greenhouseImg from "@/assets/smart-greenhouse-hero.jpg";
 import { Button } from "@/components/ui/button";
 import RevealSection from "@/components/RevealSection";
 
@@ -8,7 +8,7 @@ const SmartGreenhouse = () => (
     {/* Hero */}
     <section className="relative min-h-[70vh] flex items-center">
       <div className="absolute inset-0">
-        <img src={gardenImg} alt="Smart Greenhouse" className="w-full h-full object-cover" />
+        <img src={greenhouseImg} alt="Smart växthus med automatiserad odling och display" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/60" />
       </div>
       <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
