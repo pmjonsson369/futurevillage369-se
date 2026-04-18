@@ -73,33 +73,37 @@ const startHere = [
 const Index = () => (
   <>
     {/* Hero – dark cinematic */}
-    <section className="relative min-h-screen flex items-center">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Skandinaviskt hus med genomtänkt trädgård" className="w-full h-full object-cover scale-105" width={1920} height={1080} />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
+        <img src={heroImg} alt="Skandinaviskt hus med genomtänkt trädgård" className="w-full h-full object-cover scale-110 animate-fade-in-slow" width={1920} height={1080} />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/85" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.45)_100%)]" />
       </div>
-      <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-32">
-        <p className="text-xs md:text-sm font-light tracking-[0.4em] uppercase text-white/60 mb-12 animate-fade-in">
+      <div className="relative z-10 max-w-6xl mx-auto text-center px-6 py-40">
+        <p className="text-[11px] md:text-xs font-light tracking-[0.5em] uppercase text-white/55 mb-16 animate-fade-in">
           369 Future Village
         </p>
-        <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-[8.5rem] font-serif text-white leading-[0.95] mb-12 tracking-tight animate-fade-in">
+        <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-serif text-white leading-[0.92] mb-16 tracking-[-0.02em] animate-fade-in">
           Smarta system för självförsörjande hem och ekobyar
         </h1>
-        <p className="text-lg md:text-xl text-white/70 font-light mb-16 max-w-2xl mx-auto leading-[1.9] tracking-wide animate-fade-in">
+        <p className="text-lg md:text-xl text-white/70 font-light mb-20 max-w-2xl mx-auto leading-[2] tracking-wide animate-fade-in-slow">
           Vi börjar med vatten, odling och automation –
           <br className="hidden md:block" />
           och skapar grunden för ett sätt att leva
           <br className="hidden md:block" />
           där natur och teknik samspelar.
         </p>
-        <div className="flex flex-col sm:flex-row gap-5 justify-center animate-fade-in">
-          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-slow">
+          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-14 py-8 h-auto">
             <Link to="/smart-garden">Utforska Smart trädgård</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="btn-premium border-white/25 text-white bg-white/5 hover:bg-white/15 hover:text-white text-base px-12 py-8 h-auto backdrop-blur-sm">
+          <Button asChild size="lg" variant="outline" className="btn-premium border-white/25 text-white bg-white/5 hover:bg-white/15 hover:text-white text-base px-14 py-8 h-auto backdrop-blur-md">
             <Link to="/ecovillage">Utforska ekobyar</Link>
           </Button>
         </div>
+      </div>
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-fade-in-slow">
+        <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent" />
       </div>
     </section>
 
