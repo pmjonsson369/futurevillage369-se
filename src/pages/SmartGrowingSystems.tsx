@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import gardenImg from "@/assets/smart-garden.jpg";
+import gardenImg from "@/assets/garden-aerial.jpg";
 import greenhouseImg from "@/assets/smart-greenhouse.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";

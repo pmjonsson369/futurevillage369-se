@@ -60,7 +60,7 @@ const startHere = [
     desc: "Från trädgård till växthus – smart och automatiserad odling",
     link: "/smart-growing-systems",
     cta: "Läs mer",
-    img: gardenImg,
+    img: gardenAerial,
   },
   {
     title: "Ekobyar",
@@ -76,7 +76,16 @@ const Index = () => (
     {/* Hero – dark cinematic */}
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Skandinaviskt hus med genomtänkt trädgård" className="w-full h-full object-cover scale-110 animate-fade-in-slow" width={1920} height={1080} />
+        <video
+          src={heroVideo.url}
+          poster={heroImg}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover scale-105 animate-fade-in-slow"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/85" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.45)_100%)]" />
       </div>
