@@ -73,33 +73,37 @@ const startHere = [
 const Index = () => (
   <>
     {/* Hero – dark cinematic */}
-    <section className="relative min-h-screen flex items-center">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Skandinaviskt hus med genomtänkt trädgård" className="w-full h-full object-cover scale-105" width={1920} height={1080} />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
+        <img src={heroImg} alt="Skandinaviskt hus med genomtänkt trädgård" className="w-full h-full object-cover scale-110 animate-fade-in-slow" width={1920} height={1080} />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/85" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.45)_100%)]" />
       </div>
-      <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-32">
-        <p className="text-xs md:text-sm font-light tracking-[0.4em] uppercase text-white/60 mb-12 animate-fade-in">
+      <div className="relative z-10 max-w-6xl mx-auto text-center px-6 py-40">
+        <p className="text-[11px] md:text-xs font-light tracking-[0.5em] uppercase text-white/55 mb-16 animate-fade-in">
           369 Future Village
         </p>
-        <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-[8.5rem] font-serif text-white leading-[0.95] mb-12 tracking-tight animate-fade-in">
+        <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-serif text-white leading-[0.92] mb-16 tracking-[-0.02em] animate-fade-in">
           Smarta system för självförsörjande hem och ekobyar
         </h1>
-        <p className="text-lg md:text-xl text-white/70 font-light mb-16 max-w-2xl mx-auto leading-[1.9] tracking-wide animate-fade-in">
+        <p className="text-lg md:text-xl text-white/70 font-light mb-20 max-w-2xl mx-auto leading-[2] tracking-wide animate-fade-in-slow">
           Vi börjar med vatten, odling och automation –
           <br className="hidden md:block" />
           och skapar grunden för ett sätt att leva
           <br className="hidden md:block" />
           där natur och teknik samspelar.
         </p>
-        <div className="flex flex-col sm:flex-row gap-5 justify-center animate-fade-in">
-          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-slow">
+          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-14 py-8 h-auto">
             <Link to="/smart-garden">Utforska Smart trädgård</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="btn-premium border-white/25 text-white bg-white/5 hover:bg-white/15 hover:text-white text-base px-12 py-8 h-auto backdrop-blur-sm">
+          <Button asChild size="lg" variant="outline" className="btn-premium border-white/25 text-white bg-white/5 hover:bg-white/15 hover:text-white text-base px-14 py-8 h-auto backdrop-blur-md">
             <Link to="/ecovillage">Utforska ekobyar</Link>
           </Button>
         </div>
+      </div>
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-fade-in-slow">
+        <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent" />
       </div>
     </section>
 
@@ -166,15 +170,15 @@ const Index = () => (
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-16 mt-24">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-16 md:gap-20 mt-32">
             {systemParts.map((part, i) => (
-              <RevealSection key={part.title} delay={i * 100}>
+              <RevealSection key={part.title} delay={i * 120}>
                 <div className="text-center group">
-                  <div className="icon-orb mb-8">
-                    <part.icon size={28} className="text-primary" strokeWidth={1.25} />
+                  <div className="icon-orb mb-10">
+                    <part.icon size={32} className="text-primary" strokeWidth={1.1} />
                   </div>
-                  <h3 className="text-lg font-serif mb-4">{part.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-[1.8] font-light">{part.desc}</p>
+                  <h3 className="text-lg font-serif mb-5 tracking-tight">{part.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-[1.9] font-light">{part.desc}</p>
                 </div>
               </RevealSection>
             ))}
@@ -191,20 +195,20 @@ const Index = () => (
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Starta här</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif">Var börjar du?</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-12">
             {startHere.map((s, i) => (
               <RevealSection key={s.title} delay={i * 150}>
                 <Link
                   to={s.link}
-                  className="group rounded-2xl overflow-hidden bg-background border border-border transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
+                  className="group block rounded-3xl overflow-hidden bg-background border border-border/60 transition-all duration-700 ease-out hover:shadow-[0_30px_80px_-30px_hsl(var(--foreground)/0.25)] hover:-translate-y-2 hover:border-primary/30"
                 >
                   <div className="overflow-hidden">
-                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-72 object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
                   </div>
-                  <div className="p-8">
-                    <h3 className="text-xl font-serif mb-4 group-hover:text-primary transition-colors duration-300">{s.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-6 font-light">{s.desc}</p>
-                    <span className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-all duration-300 group-hover:gap-3">
+                  <div className="p-10">
+                    <h3 className="text-xl font-serif mb-5 tracking-tight group-hover:text-primary transition-colors duration-500">{s.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-[1.9] mb-8 font-light">{s.desc}</p>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-all duration-500 group-hover:gap-4">
                       {s.cta} <ArrowRight size={14} />
                     </span>
                   </div>
