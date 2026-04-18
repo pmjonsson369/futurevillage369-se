@@ -76,11 +76,16 @@
 
 @layer utilities {
   .section-padding {
-    @apply px-6 md:px-12 lg:px-24 py-40 md:py-56 lg:py-72;
+    @apply px-6 md:px-12 lg:px-24 py-48 md:py-64 lg:py-80;
   }
 
   .section-padding-sm {
-    @apply px-6 md:px-12 lg:px-24 py-28 md:py-40;
+    @apply px-6 md:px-12 lg:px-24 py-32 md:py-48;
+  }
+
+  /* Consistent warm, slightly darker tone across all photographic images */
+  .img-tone {
+    filter: brightness(0.94) contrast(1.04) saturate(1.05) sepia(0.06);
   }
 
   .btn-premium {

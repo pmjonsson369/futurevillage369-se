@@ -84,17 +84,21 @@ const Index = () => (
           muted
           playsInline
           preload="auto"
-          className="w-full h-full object-cover scale-105 animate-fade-in-slow"
+          className="w-full h-full object-cover scale-105 animate-fade-in-slow img-tone"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/85" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.45)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/95" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.6)_100%)]" />
       </div>
-      <div className="relative z-10 max-w-6xl mx-auto text-center px-6 py-40">
-        <p className="text-[11px] md:text-xs font-light tracking-[0.5em] uppercase text-white/55 mb-16 animate-fade-in">
+      <div className="relative z-10 max-w-6xl mx-auto text-center px-6 py-48">
+        <p className="text-[11px] md:text-xs font-light tracking-[0.5em] uppercase text-white/55 mb-20 animate-fade-in">
           369 Future Village
         </p>
-        <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-serif text-white leading-[0.92] mb-16 tracking-[-0.02em] animate-fade-in">
-          Smarta system för självförsörjande hem och ekobyar
+        <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-serif text-white leading-[0.92] mb-20 tracking-[-0.02em] animate-fade-in">
+          Smarta system
+          <br />
+          för självförsörjande
+          <br />
+          hem och ekobyar
         </h1>
         <p className="text-lg md:text-xl text-white/70 font-light mb-20 max-w-2xl mx-auto leading-[2] tracking-wide animate-fade-in-slow">
           Vi börjar med vatten, odling och automation –
