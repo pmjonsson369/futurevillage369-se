@@ -84,17 +84,21 @@ const Index = () => (
           muted
           playsInline
           preload="auto"
-          className="w-full h-full object-cover scale-105 animate-fade-in-slow"
+          className="w-full h-full object-cover scale-105 animate-fade-in-slow img-tone"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/85" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.45)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/95" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.6)_100%)]" />
       </div>
-      <div className="relative z-10 max-w-6xl mx-auto text-center px-6 py-40">
-        <p className="text-[11px] md:text-xs font-light tracking-[0.5em] uppercase text-white/55 mb-16 animate-fade-in">
+      <div className="relative z-10 max-w-6xl mx-auto text-center px-6 py-48">
+        <p className="text-[11px] md:text-xs font-light tracking-[0.5em] uppercase text-white/55 mb-20 animate-fade-in">
           369 Future Village
         </p>
-        <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-serif text-white leading-[0.92] mb-16 tracking-[-0.02em] animate-fade-in">
-          Smarta system för självförsörjande hem och ekobyar
+        <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-serif text-white leading-[0.92] mb-20 tracking-[-0.02em] animate-fade-in">
+          Smarta system
+          <br />
+          för självförsörjande
+          <br />
+          hem och ekobyar
         </h1>
         <p className="text-lg md:text-xl text-white/70 font-light mb-20 max-w-2xl mx-auto leading-[2] tracking-wide animate-fade-in-slow">
           Vi börjar med vatten, odling och automation –
@@ -122,7 +126,7 @@ const Index = () => (
       <RevealSection>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
           <div className="rounded-2xl overflow-hidden">
-            <img src={introImg} alt="Lugn trädgårdsmiljö" loading="lazy" className="w-full h-80 md:h-[32rem] object-cover transition-transform duration-700 hover:scale-105" />
+            <img src={introImg} alt="Lugn trädgårdsmiljö" loading="lazy" className="w-full h-80 md:h-[32rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
           </div>
           <div>
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Vad vi gör</p>
@@ -213,7 +217,7 @@ const Index = () => (
                   className="group block rounded-3xl overflow-hidden bg-background border border-border/60 transition-all duration-700 ease-out hover:shadow-[0_30px_80px_-30px_hsl(var(--foreground)/0.25)] hover:-translate-y-2 hover:border-primary/30"
                 >
                   <div className="overflow-hidden">
-                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-72 object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
+                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-72 object-cover img-tone transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
                   </div>
                   <div className="p-10">
                     <h3 className="text-xl font-serif mb-5 tracking-tight group-hover:text-primary transition-colors duration-500">{s.title}</h3>
