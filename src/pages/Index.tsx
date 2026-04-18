@@ -126,7 +126,7 @@ const Index = () => (
       <RevealSection>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
           <div className="rounded-2xl overflow-hidden">
-            <img src={introImg} alt="Lugn trädgårdsmiljö" loading="lazy" className="w-full h-80 md:h-[32rem] object-cover transition-transform duration-700 hover:scale-105" />
+            <img src={introImg} alt="Lugn trädgårdsmiljö" loading="lazy" className="w-full h-80 md:h-[32rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
           </div>
           <div>
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Vad vi gör</p>
@@ -217,7 +217,7 @@ const Index = () => (
                   className="group block rounded-3xl overflow-hidden bg-background border border-border/60 transition-all duration-700 ease-out hover:shadow-[0_30px_80px_-30px_hsl(var(--foreground)/0.25)] hover:-translate-y-2 hover:border-primary/30"
                 >
                   <div className="overflow-hidden">
-                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-72 object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
+                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-72 object-cover img-tone transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
                   </div>
                   <div className="p-10">
                     <h3 className="text-xl font-serif mb-5 tracking-tight group-hover:text-primary transition-colors duration-500">{s.title}</h3>
