@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import gardenImg from "@/assets/smart-garden.jpg";
-import introImg from "@/assets/intro.jpg";
+import introImg from "@/assets/garden-planning.jpg";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
