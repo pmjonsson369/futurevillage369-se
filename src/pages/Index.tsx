@@ -170,15 +170,15 @@ const Index = () => (
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-16 mt-24">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-16 md:gap-20 mt-32">
             {systemParts.map((part, i) => (
-              <RevealSection key={part.title} delay={i * 100}>
+              <RevealSection key={part.title} delay={i * 120}>
                 <div className="text-center group">
-                  <div className="icon-orb mb-8">
-                    <part.icon size={28} className="text-primary" strokeWidth={1.25} />
+                  <div className="icon-orb mb-10">
+                    <part.icon size={32} className="text-primary" strokeWidth={1.1} />
                   </div>
-                  <h3 className="text-lg font-serif mb-4">{part.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-[1.8] font-light">{part.desc}</p>
+                  <h3 className="text-lg font-serif mb-5 tracking-tight">{part.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-[1.9] font-light">{part.desc}</p>
                 </div>
               </RevealSection>
             ))}
