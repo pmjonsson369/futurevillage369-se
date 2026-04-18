@@ -195,20 +195,20 @@ const Index = () => (
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Starta här</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif">Var börjar du?</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-12">
             {startHere.map((s, i) => (
               <RevealSection key={s.title} delay={i * 150}>
                 <Link
                   to={s.link}
-                  className="group rounded-2xl overflow-hidden bg-background border border-border transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
+                  className="group block rounded-3xl overflow-hidden bg-background border border-border/60 transition-all duration-700 ease-out hover:shadow-[0_30px_80px_-30px_hsl(var(--foreground)/0.25)] hover:-translate-y-2 hover:border-primary/30"
                 >
                   <div className="overflow-hidden">
-                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-72 object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
                   </div>
-                  <div className="p-8">
-                    <h3 className="text-xl font-serif mb-4 group-hover:text-primary transition-colors duration-300">{s.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-6 font-light">{s.desc}</p>
-                    <span className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-all duration-300 group-hover:gap-3">
+                  <div className="p-10">
+                    <h3 className="text-xl font-serif mb-5 tracking-tight group-hover:text-primary transition-colors duration-500">{s.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-[1.9] mb-8 font-light">{s.desc}</p>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-all duration-500 group-hover:gap-4">
                       {s.cta} <ArrowRight size={14} />
                     </span>
                   </div>
