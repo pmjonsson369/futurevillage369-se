@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import heroImg from "@/assets/hero.jpg";
+import heroVideo from "@/assets/hero-video.mp4.asset.json";
 import introImg from "@/assets/intro.jpg";
-import gardenImg from "@/assets/smart-garden.jpg";
+import gardenAerial from "@/assets/garden-aerial.jpg";
 import villaImg from "@/assets/smart-villa.jpg";
 import ecoImg from "@/assets/ecovillage.jpg";
 import { Button } from "@/components/ui/button";
