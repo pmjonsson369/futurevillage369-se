@@ -35,8 +35,8 @@ const About = () => (
               och utformade för att fungera över tid.
             </p>
           </div>
-          <div className="rounded-2xl overflow-hidden">
-            <img src={aboutImg} alt="Naturlig trädgårdsmiljö" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover transition-transform duration-700 hover:scale-105" />
+          <div className="rounded-3xl overflow-hidden">
+            <img src={aboutImg} alt="Naturlig trädgårdsmiljö" loading="lazy" className="w-full h-80 md:h-[34rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
           </div>
         </div>
       </RevealSection>
