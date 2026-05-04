@@ -84,10 +84,10 @@ const Index = () => (
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.7)_100%)]" />
       </div>
       <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-56">
-        <p className="text-[11px] md:text-xs font-light tracking-[0.5em] uppercase text-white/60 mb-24 animate-fade-in">
-          369 Future Village
+        <p className="text-sm md:text-base font-extralight tracking-[0.65em] uppercase text-white/85 mb-24 animate-fade-in">
+          369&nbsp;&nbsp;Future&nbsp;&nbsp;Village
         </p>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.02] mb-20 tracking-[-0.02em] animate-fade-in">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.02] mb-20 tracking-[-0.02em] animate-fade-in max-w-4xl mx-auto">
           Smarta system för självförsörjande
           <br className="hidden md:block" />
           hem och ekobyar
