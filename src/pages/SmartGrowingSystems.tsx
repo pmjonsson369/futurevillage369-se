@@ -33,7 +33,7 @@ const SmartGrowingSystems = () => (
             <br className="hidden md:block" />
             vi tittar på struktur, vattenflöde och möjligheter.
           </p>
-          <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 rounded-full px-8 py-6 transition-all duration-300">
+          <Button asChild className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-7 h-auto">
             <Link to="/smart-garden-analysis" className="inline-flex items-center gap-2">
               Läs mer <ArrowRight size={16} />
             </Link>
