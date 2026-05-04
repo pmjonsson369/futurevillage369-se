@@ -80,8 +80,8 @@ const Index = () => (
           alt="Modernt skandinaviskt hem med växthus och vattenspegel i kvällsljus"
           className="w-full h-full object-cover scale-105 animate-fade-in-slow img-tone"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/90" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.55)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/75 to-black/95" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.7)_100%)]" />
       </div>
       <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-56">
         <p className="text-[11px] md:text-xs font-light tracking-[0.5em] uppercase text-white/60 mb-24 animate-fade-in">
