@@ -20,18 +20,19 @@ const steps = [
 const SmartGardenAnalysis = () => (
   <>
     {/* Hero */}
-    <section className="relative min-h-[85vh] flex items-center">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={analysisImg} alt="Trädgårdsanalys" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-black/70" />
+        <img src={analysisImg} alt="Trädgårdsanalys" className="w-full h-full object-cover img-tone scale-105 animate-fade-in-slow" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-black/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.65)_100%)]" />
       </div>
-      <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-24">
-        <p className="text-xs font-light tracking-[0.4em] uppercase text-white/60 mb-10">Huvuderbjudande</p>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white mb-12 leading-[1.05] tracking-tight">Trädgårdsanalys</h1>
-        <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-[1.9] mb-14 font-light">
+      <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-32">
+        <p className="text-xs md:text-sm font-extralight tracking-[0.6em] uppercase text-white/80 mb-14 animate-fade-in">Huvuderbjudande</p>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white mb-14 leading-[1.02] tracking-[-0.02em] animate-fade-in">Trädgårdsanalys</h1>
+        <p className="text-base md:text-lg text-white/75 max-w-2xl mx-auto leading-[2] mb-16 font-light animate-fade-in-slow">
           Få en tydlig plan för din trädgård – med konkreta förslag som fungerar långsiktigt.
         </p>
-        <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
+        <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-14 py-8 h-auto">
           <a href="#boka">Boka nu – 1 499 kr</a>
         </Button>
       </div>
