@@ -130,8 +130,8 @@ const Index = () => (
     <section className="section-padding bg-background">
       <RevealSection>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
-          <div className="rounded-2xl overflow-hidden">
-            <img src={introImg} alt="Lugn trädgårdsmiljö" loading="lazy" className="w-full h-80 md:h-[32rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
+          <div className="rounded-3xl overflow-hidden">
+            <img src={introImg} alt="Lugn trädgårdsmiljö med upphöjda odlingsbäddar" loading="lazy" className="w-full h-96 md:h-[40rem] lg:h-[44rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
           </div>
           <div>
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Vad vi gör</p>
