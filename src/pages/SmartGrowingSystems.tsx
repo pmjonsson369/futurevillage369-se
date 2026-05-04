@@ -140,14 +140,14 @@ const SmartGrowingSystems = () => (
     </section>
 
     {/* CTA */}
-    <section className="py-28 md:py-36 px-6 md:px-12 bg-dark">
+    <section className="py-40 md:py-56 px-6 md:px-12 bg-dark">
       <RevealSection>
         <div className="max-w-2xl mx-auto text-center">
-          <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
               <Link to="/smart-garden-analysis">Boka Trädgårdsanalys</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/30 text-white bg-white/5 hover:bg-white/10 text-base px-10 py-7 rounded-full transition-all duration-300">
+            <Button asChild size="lg" variant="outline" className="btn-premium border-white/25 text-white bg-white/5 hover:bg-white/15 hover:text-white text-base px-12 py-8 h-auto">
               <Link to="/kontakt">Kontakta mig</Link>
             </Button>
           </div>
