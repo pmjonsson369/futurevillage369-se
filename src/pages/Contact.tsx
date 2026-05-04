@@ -20,7 +20,7 @@ const Contact = () => (
               hör gärna av dig.
             </p>
             <div className="space-y-5">
-              <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300 w-full md:w-auto">
+              <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto w-full md:w-auto">
                 <a href="mailto:369futurevillage@gmail.com" className="inline-flex items-center gap-3">
                   <Mail size={18} />
                   Kontakta mig
@@ -31,8 +31,8 @@ const Contact = () => (
               </p>
             </div>
           </div>
-          <div className="rounded-2xl overflow-hidden">
-            <img src={contactImg} alt="Arbetsplats" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover transition-transform duration-700 hover:scale-105" />
+          <div className="rounded-3xl overflow-hidden">
+            <img src={contactImg} alt="Arbetsplats" loading="lazy" className="w-full h-80 md:h-[34rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
           </div>
         </div>
       </RevealSection>
