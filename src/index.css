@@ -76,24 +76,24 @@
 
 @layer utilities {
   .section-padding {
-    @apply px-6 md:px-12 lg:px-24 py-48 md:py-64 lg:py-80;
+    @apply px-6 md:px-12 lg:px-24 py-56 md:py-72 lg:py-96;
   }
 
   .section-padding-sm {
-    @apply px-6 md:px-12 lg:px-24 py-32 md:py-48;
+    @apply px-6 md:px-12 lg:px-24 py-40 md:py-56;
   }
 
   /* Consistent warm, slightly darker tone across all photographic images */
   .img-tone {
-    filter: brightness(0.94) contrast(1.04) saturate(1.05) sepia(0.06);
+    filter: brightness(0.92) contrast(1.06) saturate(1.04) sepia(0.05);
   }
 
   .btn-premium {
-    @apply rounded-full transition-all duration-500 ease-out hover:shadow-[0_18px_50px_-12px_hsl(var(--primary)/0.55)] hover:-translate-y-[2px] tracking-wide;
+    @apply rounded-full transition-all duration-500 ease-out hover:shadow-[0_24px_60px_-12px_hsl(var(--primary)/0.6)] hover:-translate-y-[3px] tracking-[0.15em] uppercase text-xs font-medium;
   }
 
   .icon-orb {
-    @apply w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary/[0.08] ring-1 ring-primary/10 flex items-center justify-center mx-auto transition-all duration-700 ease-out group-hover:bg-primary/15 group-hover:ring-primary/25 group-hover:scale-110 group-hover:shadow-[0_12px_40px_-12px_hsl(var(--primary)/0.45)];
+    @apply w-24 h-24 md:w-28 md:h-28 rounded-full bg-primary/[0.06] ring-1 ring-primary/15 flex items-center justify-center mx-auto transition-all duration-700 ease-out group-hover:bg-primary/15 group-hover:ring-primary/30 group-hover:scale-110 group-hover:shadow-[0_16px_50px_-12px_hsl(var(--primary)/0.5)];
   }
 
   .img-premium {
