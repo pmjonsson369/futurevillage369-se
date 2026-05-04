@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import heroImg from "@/assets/hero.jpg";
-import heroVideo from "@/assets/hero-video.mp4.asset.json";
-import introImg from "@/assets/intro.jpg";
+import heroCinematic from "@/assets/hero-cinematic.jpg";
+import introImg from "@/assets/intro-premium.jpg";
 import gardenAerial from "@/assets/garden-aerial.jpg";
 import villaImg from "@/assets/smart-villa.jpg";
 import ecoImg from "@/assets/ecovillage.jpg";
@@ -76,37 +75,43 @@ const Index = () => (
     {/* Hero – dark cinematic */}
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <video
-          src={heroVideo.url}
-          poster={heroImg}
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
+        <img
+          src={heroCinematic}
+          alt="Modernt skandinaviskt hem med växthus och vattenspegel i kvällsljus"
           className="w-full h-full object-cover scale-105 animate-fade-in-slow img-tone"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/95" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.6)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.55)_100%)]" />
       </div>
-      <div className="relative z-10 max-w-6xl mx-auto text-center px-6 py-48">
-        <p className="text-[11px] md:text-xs font-light tracking-[0.5em] uppercase text-white/55 mb-20 animate-fade-in">
+      <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-56">
+        <p className="text-[11px] md:text-xs font-light tracking-[0.5em] uppercase text-white/60 mb-24 animate-fade-in">
           369 Future Village
         </p>
-        <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-serif text-white leading-[0.92] mb-20 tracking-[-0.02em] animate-fade-in">
-          Smarta system
-          <br />
-          för självförsörjande
-          <br />
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.02] mb-20 tracking-[-0.02em] animate-fade-in">
+          Smarta system för självförsörjande
+          <br className="hidden md:block" />
           hem och ekobyar
         </h1>
-        <p className="text-lg md:text-xl text-white/70 font-light mb-20 max-w-2xl mx-auto leading-[2] tracking-wide animate-fade-in-slow">
+        <p className="text-base md:text-lg text-white/70 font-light mb-20 max-w-2xl mx-auto leading-[2] tracking-wide animate-fade-in-slow">
           Vi börjar med vatten, odling och automation –
           <br className="hidden md:block" />
           och skapar grunden för ett sätt att leva
           <br className="hidden md:block" />
           där natur och teknik samspelar.
         </p>
+        <div className="flex flex-wrap items-center justify-center gap-x-14 gap-y-6 mb-20 animate-fade-in-slow">
+          {[
+            { icon: Droplets, label: "Vatten" },
+            { icon: Leaf, label: "Odling" },
+            { icon: Sun, label: "Energi" },
+            { icon: Wifi, label: "Smarta system" },
+          ].map(({ icon: Icon, label }) => (
+            <div key={label} className="flex items-center gap-3 text-white/70">
+              <Icon size={18} strokeWidth={1.1} />
+              <span className="text-xs font-light tracking-[0.25em] uppercase">{label}</span>
+            </div>
+          ))}
+        </div>
         <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-slow">
           <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-14 py-8 h-auto">
             <Link to="/smart-garden">Utforska Smart trädgård</Link>
@@ -125,8 +130,8 @@ const Index = () => (
     <section className="section-padding bg-background">
       <RevealSection>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
-          <div className="rounded-2xl overflow-hidden">
-            <img src={introImg} alt="Lugn trädgårdsmiljö" loading="lazy" className="w-full h-80 md:h-[32rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
+          <div className="rounded-3xl overflow-hidden">
+            <img src={introImg} alt="Lugn trädgårdsmiljö med upphöjda odlingsbäddar" loading="lazy" className="w-full h-96 md:h-[40rem] lg:h-[44rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
           </div>
           <div>
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Vad vi gör</p>
