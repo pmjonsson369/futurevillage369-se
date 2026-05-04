@@ -120,7 +120,6 @@ const Index = () => (
             <Link to="/ecovillage">Utforska ekobyar</Link>
           </Button>
         </div>
-        </div>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-fade-in-slow">
         <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent" />
