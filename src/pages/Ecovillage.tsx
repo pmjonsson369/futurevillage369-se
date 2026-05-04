@@ -13,21 +13,25 @@ const workSteps = [
 const Ecovillage = () => (
   <>
     {/* Hero */}
-    <section className="relative min-h-[85vh] flex items-center">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={ecoImg} alt="Ecovillage" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-black/70" />
+        <img src={ecoImg} alt="Ecovillage" className="w-full h-full object-cover img-tone scale-105 animate-fade-in-slow" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-black/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.65)_100%)]" />
       </div>
-      <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-24">
-        <p className="text-xs font-light tracking-[0.4em] uppercase text-white/60 mb-10">Ekobyar</p>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white mb-12 leading-[1.05] tracking-tight">
+      <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-32">
+        <p className="text-xs md:text-sm font-extralight tracking-[0.6em] uppercase text-white/80 mb-14 animate-fade-in">Ekobyar</p>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white mb-14 leading-[1.02] tracking-[-0.02em] animate-fade-in">
           Smarta system för ekobyar
         </h1>
-        <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-[1.9] font-light">
+        <p className="text-base md:text-lg text-white/75 max-w-2xl mx-auto leading-[2] font-light animate-fade-in-slow">
           Vi hjälper ekobyar att förstå, förbättra
           <br className="hidden md:block" />
           och utveckla sina system – steg för steg.
         </p>
+      </div>
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
+        <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent" />
       </div>
     </section>
 
@@ -116,7 +120,7 @@ const Ecovillage = () => (
             <br className="hidden md:block" />
             samverkar i en fungerande helhet.
           </p>
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300">
+          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
             <Link to="/kontakt">Kontakta mig</Link>
           </Button>
         </div>

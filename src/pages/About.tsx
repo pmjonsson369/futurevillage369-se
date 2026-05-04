@@ -35,8 +35,8 @@ const About = () => (
               och utformade för att fungera över tid.
             </p>
           </div>
-          <div className="rounded-2xl overflow-hidden">
-            <img src={aboutImg} alt="Naturlig trädgårdsmiljö" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover transition-transform duration-700 hover:scale-105" />
+          <div className="rounded-3xl overflow-hidden">
+            <img src={aboutImg} alt="Naturlig trädgårdsmiljö" loading="lazy" className="w-full h-80 md:h-[34rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
           </div>
         </div>
       </RevealSection>
@@ -67,7 +67,7 @@ const About = () => (
             <br className="hidden md:block" />
             hör gärna av dig.
           </p>
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300">
+          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
             <Link to="/kontakt">Kontakta mig</Link>
           </Button>
         </div>

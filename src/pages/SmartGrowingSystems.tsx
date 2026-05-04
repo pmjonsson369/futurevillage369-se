@@ -8,13 +8,14 @@ import RevealSection from "@/components/RevealSection";
 const SmartGrowingSystems = () => (
   <>
     {/* Hero */}
-    <section className="relative py-44 md:py-56 bg-dark">
-      <div className="max-w-5xl mx-auto text-center px-6">
-        <p className="text-xs font-light tracking-[0.4em] uppercase text-white/60 mb-10">Smarta odlingssystem</p>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-dark-foreground mb-12 leading-[1.05] tracking-tight">
+    <section className="relative py-56 md:py-72 bg-dark overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(var(--primary)/0.08)_0%,transparent_60%)]" />
+      <div className="relative max-w-5xl mx-auto text-center px-6">
+        <p className="text-xs md:text-sm font-extralight tracking-[0.6em] uppercase text-white/80 mb-14 animate-fade-in">Smarta odlingssystem</p>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-dark-foreground mb-14 leading-[1.02] tracking-[-0.02em] animate-fade-in">
           Från trädgård till växthus – odla smartare
         </h1>
-        <p className="text-lg md:text-xl text-dark-muted leading-[1.9] max-w-2xl mx-auto font-light">
+        <p className="text-base md:text-lg text-dark-muted leading-[2] max-w-2xl mx-auto font-light animate-fade-in-slow">
           Ett system som börjar enkelt
           <br className="hidden md:block" />
           och kan utvecklas till odling året runt.
@@ -32,7 +33,7 @@ const SmartGrowingSystems = () => (
             <br className="hidden md:block" />
             vi tittar på struktur, vattenflöde och möjligheter.
           </p>
-          <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 rounded-full px-8 py-6 transition-all duration-300">
+          <Button asChild className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-7 h-auto">
             <Link to="/smart-garden-analysis" className="inline-flex items-center gap-2">
               Läs mer <ArrowRight size={16} />
             </Link>
@@ -46,7 +47,7 @@ const SmartGrowingSystems = () => (
       <RevealSection>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
           <div className="rounded-2xl overflow-hidden">
-            <img src={gardenImg} alt="Smart trädgård" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover transition-transform duration-700 hover:scale-105" />
+            <img src={gardenImg} alt="Smart trädgård" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
           </div>
           <div>
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Smart trädgård</p>
@@ -104,7 +105,7 @@ const SmartGrowingSystems = () => (
       <RevealSection>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
           <div className="md:order-2 rounded-2xl overflow-hidden">
-            <img src={greenhouseImg} alt="Smart växthus med smart odling och display" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover transition-transform duration-700 hover:scale-105" />
+            <img src={greenhouseImg} alt="Smart växthus med smart odling och display" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
           </div>
           <div className="md:order-1">
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Smart växthus</p>
@@ -139,14 +140,14 @@ const SmartGrowingSystems = () => (
     </section>
 
     {/* CTA */}
-    <section className="py-28 md:py-36 px-6 md:px-12 bg-dark">
+    <section className="py-40 md:py-56 px-6 md:px-12 bg-dark">
       <RevealSection>
         <div className="max-w-2xl mx-auto text-center">
-          <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
               <Link to="/smart-garden-analysis">Boka Trädgårdsanalys</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/30 text-white bg-white/5 hover:bg-white/10 text-base px-10 py-7 rounded-full transition-all duration-300">
+            <Button asChild size="lg" variant="outline" className="btn-premium border-white/25 text-white bg-white/5 hover:bg-white/15 hover:text-white text-base px-12 py-8 h-auto">
               <Link to="/kontakt">Kontakta mig</Link>
             </Button>
           </div>
