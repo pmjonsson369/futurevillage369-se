@@ -133,7 +133,7 @@ const SmartVilla = () => (
             <br className="hidden md:block" />
             klimatanpassning och mer avancerad automation.
           </p>
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/20 text-base px-10 py-7 rounded-full transition-all duration-300">
+          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
             <Link to="/kontakt">Kontakta mig</Link>
           </Button>
         </div>
