@@ -105,7 +105,7 @@ const SmartGrowingSystems = () => (
       <RevealSection>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
           <div className="md:order-2 rounded-2xl overflow-hidden">
-            <img src={greenhouseImg} alt="Smart växthus med smart odling och display" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover transition-transform duration-700 hover:scale-105" />
+            <img src={greenhouseImg} alt="Smart växthus med smart odling och display" loading="lazy" className="w-full h-72 md:h-[28rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
           </div>
           <div className="md:order-1">
             <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Smart växthus</p>
