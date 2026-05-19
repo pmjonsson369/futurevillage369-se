@@ -1,239 +1,244 @@
 import { Link } from "react-router-dom";
-import heroImg from "@/assets/hero-winter-greenhouse.jpg";
-import showcaseImg from "@/assets/showcase-app.jpg";
-import ctaImg from "@/assets/cta-greenhouse-night.jpg";
-import greenhouseImg from "@/assets/smart-greenhouse-hero.jpg";
-import gardenImg from "@/assets/smart-garden.jpg";
+import heroCinematic from "@/assets/hero-cinematic.jpg";
+import introImg from "@/assets/intro-premium.jpg";
+import gardenAerial from "@/assets/garden-aerial.jpg";
+import villaImg from "@/assets/smart-villa.jpg";
 import ecoImg from "@/assets/ecovillage.jpg";
-import analysisImg from "@/assets/analysis.jpg";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cpu, Sprout, Droplets, Activity, Leaf, ThermometerSun, Recycle } from "lucide-react";
+import { ArrowRight, Droplets, Leaf, Sun, Wifi } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 
-const features = [
+const whatWeDo = [
   {
-    icon: Cpu,
-    title: "Smart Garden",
-    desc: "Sensors, automation and live environmental data directly in your phone.",
+    title: "Smarta odlingssystem",
+    desc: "Automatiserad bevattning och övervakning för enkel och hållbar matproduktion.",
   },
   {
-    icon: ThermometerSun,
-    title: "Smart Greenhouse",
-    desc: "Future-ready greenhouses designed for Nordic climate and year-round growing.",
+    title: "Kartläggning av vattenflöden",
+    desc: "Vi analyserar och förbättrar hur vatten rör sig i hem och områden.",
   },
   {
-    icon: Recycle,
-    title: "Regenerative Systems",
-    desc: "Water, soil, food and sustainable design working together naturally.",
+    title: "Design av sammanhängande system",
+    desc: "Vi utvecklar lösningar där resurser används smart och fungerar tillsammans som en helhet.",
   },
 ];
 
-const services = [
+const systemParts = [
   {
-    icon: Activity,
-    title: "Garden Analysis",
-    desc: "A personalized analysis with ideas for design, planting, water flow and future improvements.",
-    img: analysisImg,
-  },
-  {
-    icon: Sprout,
-    title: "Smart Garden System",
-    desc: "Automated irrigation, environmental sensors and smart monitoring.",
-    img: gardenImg,
-  },
-  {
-    icon: ThermometerSun,
-    title: "Smart Greenhouse",
-    desc: "Controlled climate systems for longer growing seasons and winter cultivation.",
-    img: greenhouseImg,
-  },
-  {
+    title: "Vatten",
+    desc: "System för att samla in, rena och återanvända vatten",
     icon: Droplets,
-    title: "Regenerative Design",
-    desc: "Rainwater harvesting, growing beds, natural systems and sustainable planning.",
+  },
+  {
+    title: "Odling",
+    desc: "Matskogar och moderna odlingssystem",
+    icon: Leaf,
+  },
+  {
+    title: "Energi",
+    desc: "Sol, vind och energilagring integrerat i boendet",
+    icon: Sun,
+  },
+  {
+    title: "Smarta system",
+    desc: "Sensorer, data och uppkopplad styrning i realtid",
+    icon: Wifi,
+  },
+];
+
+const startHere = [
+  {
+    title: "Smart Villa",
+    desc: "Ett sammanhängande system för hemmet där vatten, odling och teknik samverkar",
+    link: "/smart-villa",
+    cta: "Utforska",
+    img: villaImg,
+  },
+  {
+    title: "Smarta odlingssystem",
+    desc: "Från trädgård till växthus – smart och automatiserad odling",
+    link: "/smart-growing-systems",
+    cta: "Läs mer",
+    img: gardenAerial,
+  },
+  {
+    title: "Ekobyar",
+    desc: "Pilotprojekt där vi kartlägger och utvecklar system i mindre samhällen",
+    link: "/ecovillage",
+    cta: "Läs mer",
     img: ecoImg,
   },
 ];
 
 const Index = () => (
-  <div className="bg-dark text-dark-foreground">
-    {/* HERO */}
+  <>
+    {/* Hero – dark cinematic */}
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={heroImg}
-          alt="Luxury Scandinavian smart greenhouse glowing in winter dusk"
-          className="w-full h-full object-cover scale-105 animate-fade-in-slow"
+          src={heroCinematic}
+          alt="Modernt skandinaviskt hem med växthus och vattenspegel i kvällsljus"
+          className="w-full h-full object-cover scale-105 animate-fade-in-slow img-tone"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/65 to-black/95" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.7)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black/95" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.75)_100%)]" />
       </div>
-
-      <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-32">
-        <p className="text-[11px] md:text-xs font-light tracking-[0.6em] uppercase text-white/70 mb-12 animate-fade-in">
+      <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-56">
+        <p className="text-sm md:text-base font-extralight tracking-[0.65em] uppercase text-white/85 mb-24 animate-fade-in">
           369&nbsp;&nbsp;Future&nbsp;&nbsp;Village
         </p>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white leading-[1.05] mb-10 tracking-[-0.02em] animate-fade-in">
-          Smart Gardens & Greenhouses
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.02] mb-20 tracking-[-0.02em] animate-fade-in max-w-4xl mx-auto">
+          Smarta system för självförsörjande
           <br className="hidden md:block" />
-          for Nordic Living
+          hem och ekobyar
         </h1>
-        <p className="text-base md:text-lg text-white/70 font-light mb-14 max-w-2xl mx-auto leading-[1.9] animate-fade-in-slow">
-          We design intelligent growing environments where technology,
+        <p className="text-base md:text-lg text-white/70 font-light mb-20 max-w-2xl mx-auto leading-[2] tracking-wide animate-fade-in-slow">
+          Vi börjar med vatten, odling och automation –
           <br className="hidden md:block" />
-          water and nature work together in harmony.
+          och skapar grunden för ett sätt att leva
+          <br className="hidden md:block" />
+          där natur och teknik samspelar.
         </p>
-        <div className="flex flex-col sm:flex-row gap-5 justify-center animate-fade-in-slow">
-          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-7 h-auto">
-            <Link to="/smart-garden-analysis">Book Garden Analysis</Link>
+        <div className="flex flex-wrap items-center justify-center gap-x-14 gap-y-6 mb-20 animate-fade-in-slow">
+          {[
+            { icon: Droplets, label: "Vatten" },
+            { icon: Leaf, label: "Odling" },
+            { icon: Sun, label: "Energi" },
+            { icon: Wifi, label: "Smarta system" },
+          ].map(({ icon: Icon, label }) => (
+            <div key={label} className="flex items-center gap-3 text-white/70">
+              <Icon size={18} strokeWidth={1.1} />
+              <span className="text-xs font-light tracking-[0.25em] uppercase">{label}</span>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-slow">
+          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-14 py-8 h-auto">
+            <Link to="/smart-garden">Utforska Smart trädgård</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="btn-premium border-white/25 text-white bg-white/5 hover:bg-white/15 hover:text-white text-base px-12 py-7 h-auto backdrop-blur-md">
-            <Link to="/smart-garden">Explore Smart Garden</Link>
+          <Button asChild size="lg" variant="outline" className="btn-premium border-white/25 text-white bg-white/5 hover:bg-white/15 hover:text-white text-base px-14 py-8 h-auto backdrop-blur-md">
+            <Link to="/ecovillage">Utforska ekobyar</Link>
           </Button>
         </div>
       </div>
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
-        <div className="w-px h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent" />
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-fade-in-slow">
+        <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent" />
       </div>
     </section>
 
-    {/* FEATURE GLASS CARDS */}
-    <section className="relative section-padding-sm bg-dark">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(var(--primary)/0.12),transparent_60%)]" />
-      <RevealSection>
-        <div className="relative max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
-            {features.map((f, i) => (
-              <RevealSection key={f.title} delay={i * 120}>
-                <div className="glass-card p-10 h-full group">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/15 ring-1 ring-primary/30 flex items-center justify-center mb-8 transition-all duration-500 group-hover:bg-primary/25 group-hover:ring-primary/50">
-                    <f.icon size={24} className="text-primary" strokeWidth={1.4} />
-                  </div>
-                  <h3 className="text-2xl font-serif text-white mb-4 tracking-tight">{f.title}</h3>
-                  <p className="text-sm text-white/60 leading-[1.9] font-light">{f.desc}</p>
-                </div>
-              </RevealSection>
-            ))}
-          </div>
-        </div>
-      </RevealSection>
-    </section>
-
-    {/* VISUAL SHOWCASE */}
-    <section className="section-padding bg-dark relative overflow-hidden">
+    {/* Vad vi gör */}
+    <section className="section-padding bg-background">
       <RevealSection>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-center">
+          <div className="rounded-3xl overflow-hidden">
+            <img src={introImg} alt="Lugn trädgårdsmiljö med upphöjda odlingsbäddar" loading="lazy" className="w-full h-96 md:h-[40rem] lg:h-[44rem] object-cover img-tone transition-transform duration-700 hover:scale-105" />
+          </div>
           <div>
-            <p className="text-[11px] font-medium tracking-[0.4em] uppercase text-primary mb-6">Living systems</p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-10 leading-[1.05] tracking-tight">
-              Grow smarter.
-              <br />
-              Live closer to nature.
-            </h2>
-            <p className="text-lg text-white/65 leading-[1.9] font-light max-w-lg">
-              369 Future Village creates modern solutions for people who want beautiful outdoor spaces,
-              intelligent growing systems and a more sustainable lifestyle.
+            <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Vad vi gör</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-8 leading-tight">Det vi utvecklar just nu</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-12 font-light">
+              Vi utvecklar och testar enkla lösningar som hjälper hem och ekobyar att bli mer självförsörjande –
+              <br className="hidden md:block" />
+              med system som går att bygga ut över tid.
             </p>
-          </div>
-          <div className="relative">
-            <div className="absolute -inset-10 bg-primary/10 blur-3xl rounded-full" />
-            <div className="relative rounded-3xl overflow-hidden ring-1 ring-white/10">
-              <img src={showcaseImg} alt="Smart garden mobile interface floating above plants" loading="lazy" className="w-full h-[32rem] object-cover" />
-            </div>
-            <div className="absolute -bottom-6 -left-6 glass-card p-5 hidden sm:flex items-center gap-3">
-              <Droplets size={18} className="text-primary" strokeWidth={1.4} />
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-white/50">Soil moisture</p>
-                <p className="text-sm text-white font-light">62% · Optimal</p>
-              </div>
-            </div>
-            <div className="absolute -top-6 -right-6 glass-card p-5 hidden sm:flex items-center gap-3">
-              <ThermometerSun size={18} className="text-primary" strokeWidth={1.4} />
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-white/50">Climate</p>
-                <p className="text-sm text-white font-light">21°C · Stable</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </RevealSection>
-    </section>
-
-    {/* SERVICES */}
-    <section className="section-padding-sm bg-dark relative">
-      <RevealSection>
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20">
-            <p className="text-[11px] font-medium tracking-[0.4em] uppercase text-primary mb-6">Services</p>
-            <h2 className="text-3xl md:text-5xl font-serif text-white tracking-tight">A complete approach</h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {services.map((s, i) => (
-              <RevealSection key={s.title} delay={i * 100}>
-                <div className="glass-card overflow-hidden group h-full">
-                  <div className="overflow-hidden h-64">
-                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-full object-cover img-tone transition-transform duration-[1200ms] ease-out group-hover:scale-110" />
-                  </div>
-                  <div className="p-10">
-                    <div className="flex items-center gap-4 mb-5">
-                      <div className="w-10 h-10 rounded-xl bg-primary/15 ring-1 ring-primary/25 flex items-center justify-center">
-                        <s.icon size={18} className="text-primary" strokeWidth={1.4} />
-                      </div>
-                      <h3 className="text-xl font-serif text-white tracking-tight">{s.title}</h3>
-                    </div>
-                    <p className="text-sm text-white/60 leading-[1.9] font-light">{s.desc}</p>
-                  </div>
+            <div className="space-y-10">
+              {whatWeDo.map((item) => (
+                <div key={item.title}>
+                  <h3 className="text-xl font-serif mb-3">{item.title}</h3>
+                  <p className="text-base text-muted-foreground leading-relaxed font-light">{item.desc}</p>
                 </div>
-              </RevealSection>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </RevealSection>
     </section>
 
-    {/* VISION */}
-    <section className="relative py-40 md:py-56 px-6 overflow-hidden bg-dark">
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(var(--primary)/0.18),transparent_70%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,hsl(var(--primary)/0.15),transparent_40%)]" />
-      </div>
+    {/* Visionen – dark section */}
+    <section className="py-28 md:py-36 lg:py-44 px-6 md:px-12 bg-dark">
       <RevealSection>
-        <div className="relative max-w-3xl mx-auto text-center">
-          <Leaf size={28} className="text-primary mx-auto mb-10" strokeWidth={1.1} />
-          <p className="text-[11px] font-medium tracking-[0.4em] uppercase text-primary mb-8">The vision</p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-12 leading-[1.1] tracking-tight">
-            This is only the beginning.
-          </h2>
-          <p className="text-lg md:text-xl text-white/70 font-light leading-[1.9]">
-            369 Future Village is gradually building toward future self-sustaining environments
-            where homes, gardens, water, energy and food systems function as one living ecosystem.
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Visionen</p>
+          <p className="text-2xl md:text-3xl text-dark-foreground font-serif leading-relaxed">
+            En framtid där hem producerar sin egen mat,
+            <br className="hidden md:block" />
+            hanterar sitt eget vatten och drivs av smarta system –
+            <br className="hidden md:block" />
+            som en naturlig del av vardagen.
           </p>
         </div>
       </RevealSection>
     </section>
 
-    {/* FINAL CTA */}
-    <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img src={ctaImg} alt="Luxury greenhouse glowing at night with subtle fog" loading="lazy" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/90" />
-      </div>
+    {/* Systemet */}
+    <section className="section-padding bg-background">
       <RevealSection>
-        <div className="relative z-10 max-w-3xl mx-auto text-center px-6 py-32">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-12 leading-[1.05] tracking-tight">
-            Ready to create
-            <br />
-            your future garden?
-          </h2>
-          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-14 py-8 h-auto">
-            <Link to="/kontakt">
-              Contact Us <ArrowRight size={16} className="ml-1" />
-            </Link>
-          </Button>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-8">
+            <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Systemet</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-8 leading-tight">
+              Vi designar system för vatten, odling, energi och övervakning
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-4 font-light">
+              som fungerar både var för sig och tillsammans.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto font-light">
+              Målet är att skapa en helhet där allt hänger ihop –
+              <br className="hidden md:block" />
+              enkelt, effektivt och i balans med naturen.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-16 md:gap-20 mt-32">
+            {systemParts.map((part, i) => (
+              <RevealSection key={part.title} delay={i * 120}>
+                <div className="text-center group">
+                  <div className="icon-orb mb-10">
+                    <part.icon size={32} className="text-primary" strokeWidth={1.1} />
+                  </div>
+                  <h3 className="text-lg font-serif mb-5 tracking-tight">{part.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-[1.9] font-light">{part.desc}</p>
+                </div>
+              </RevealSection>
+            ))}
+          </div>
         </div>
       </RevealSection>
     </section>
-  </div>
+
+    {/* Starta här */}
+    <section className="section-padding bg-warm">
+      <RevealSection>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-20">
+            <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Starta här</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif">Var börjar du?</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-12">
+            {startHere.map((s, i) => (
+              <RevealSection key={s.title} delay={i * 150}>
+                <Link
+                  to={s.link}
+                  className="group block rounded-3xl overflow-hidden bg-background border border-border/60 transition-all duration-700 ease-out hover:shadow-[0_30px_80px_-30px_hsl(var(--foreground)/0.25)] hover:-translate-y-2 hover:border-primary/30"
+                >
+                  <div className="overflow-hidden">
+                    <img src={s.img} alt={s.title} loading="lazy" className="w-full h-72 object-cover img-tone transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
+                  </div>
+                  <div className="p-10">
+                    <h3 className="text-xl font-serif mb-5 tracking-tight group-hover:text-primary transition-colors duration-500">{s.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-[1.9] mb-8 font-light">{s.desc}</p>
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-all duration-500 group-hover:gap-4">
+                      {s.cta} <ArrowRight size={14} />
+                    </span>
+                  </div>
+                </Link>
+              </RevealSection>
+            ))}
+          </div>
+        </div>
+      </RevealSection>
+    </section>
+  </>
 );
 
 export default Index;
