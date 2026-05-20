@@ -1,135 +1,85 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
+
+const navItems = [
+  { to: "/", label: "Hem" },
+  { to: "/smart-garden", label: "Smart Garden" },
+  { to: "/smart-greenhouse", label: "Smart Greenhouse" },
+  { to: "/smart-growing-systems", label: "Regenerativa System" },
+  { to: "/ecovillage", label: "Vision" },
+  { to: "/kontakt", label: "Kontakt" },
+];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [growingOpen, setGrowingOpen] = useState(false);
   const location = useLocation();
-
   const isActive = (path: string) => location.pathname === path;
-  const isGrowingActive = ["/smart-growing-systems", "/smart-garden", "/smart-greenhouse", "/smart-garden-analysis"].includes(location.pathname);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-2xl border-b border-border/40">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12 h-16">
         <Link to="/" className="font-serif text-xl tracking-tight text-foreground">
           369 Future Village
         </Link>
 
         {/* Desktop */}
-        <ul className="hidden md:flex items-center gap-8">
-          <li>
-            <Link to="/" className={`text-sm font-light tracking-wide transition-colors duration-300 ${isActive("/") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
-              Hem
-            </Link>
-          </li>
-          <li className="relative group" onMouseEnter={() => setGrowingOpen(true)} onMouseLeave={() => setGrowingOpen(false)}>
-            <Link
-              to="/smart-growing-systems"
-              className={`text-sm font-light tracking-wide transition-colors duration-300 flex items-center gap-1 ${isGrowingActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
-            >
-              Smarta odlingssystem
-              <ChevronDown size={14} className={`transition-transform duration-300 ${growingOpen ? "rotate-180" : ""}`} />
-            </Link>
-            {growingOpen && (
-              <div className="absolute top-full left-0 pt-2 w-56">
-                <div className="bg-background/95 backdrop-blur-xl border border-border/50 rounded-xl shadow-xl py-2">
-                  <Link to="/smart-garden" className="block px-5 py-3 text-sm font-light text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-all duration-200">
-                    Smart trädgård
-                  </Link>
-                  <Link to="/smart-greenhouse" className="block px-5 py-3 text-sm font-light text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-all duration-200">
-                    Smart växthus
-                  </Link>
-                  <Link to="/smart-garden-analysis" className="block px-5 py-3 text-sm font-light text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-all duration-200">
-                    Trädgårdsanalys
-                  </Link>
-                </div>
-              </div>
-            )}
-          </li>
-          <li>
-            <Link to="/smart-villa" className={`text-sm font-light tracking-wide transition-colors duration-300 ${isActive("/smart-villa") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
-              Smart Villa
-            </Link>
-          </li>
-          <li>
-            <Link to="/ecovillage" className={`text-sm font-light tracking-wide transition-colors duration-300 ${isActive("/ecovillage") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
-              Ekobyar
-            </Link>
-          </li>
-          <li>
-            <Link to="/om" className={`text-sm font-light tracking-wide transition-colors duration-300 ${isActive("/om") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
-              Om
-            </Link>
-          </li>
-          <li>
-            <Link to="/kontakt" className={`text-sm font-light tracking-wide transition-colors duration-300 ${isActive("/kontakt") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
-              Kontakt
-            </Link>
-          </li>
+        <ul className="hidden md:flex items-center gap-10">
+          {navItems.map((item) => (
+            <li key={item.to}>
+              <Link
+                to={item.to}
+                className={`relative text-[13px] font-light tracking-[0.12em] uppercase transition-colors duration-300 ${
+                  isActive(item.to) ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {item.label}
+                <span
+                  className={`absolute -bottom-1 left-0 h-px bg-foreground transition-all duration-500 ${
+                    isActive(item.to) ? "w-full" : "w-0"
+                  }`}
+                />
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Mobile toggle */}
-        <button onClick={() => setOpen(!open)} className="md:hidden text-foreground" aria-label="Toggle menu">
-          {open ? <X size={24} /> : <Menu size={24} />}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-foreground transition-transform duration-300"
+          aria-label="Toggle menu"
+        >
+          {open ? <X size={22} strokeWidth={1.25} /> : <Menu size={22} strokeWidth={1.25} />}
         </button>
       </div>
 
       {/* Mobile menu */}
-      {open && (
-        <div className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border/50">
-          <ul className="flex flex-col py-4 px-6 gap-1">
-            <li>
-              <Link to="/" onClick={() => setOpen(false)} className="block py-3 text-base font-light text-muted-foreground hover:text-foreground transition-colors">
-                Hem
-              </Link>
-            </li>
-            <li>
-              <button
-                onClick={() => setGrowingOpen(!growingOpen)}
-                className="flex items-center justify-between w-full py-3 text-base font-light text-muted-foreground hover:text-foreground transition-colors"
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-500 ease-out bg-background/95 backdrop-blur-2xl border-b border-border/40 ${
+          open ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <ul className="flex flex-col py-8 px-8 gap-1">
+          {navItems.map((item, i) => (
+            <li
+              key={item.to}
+              className="transition-all duration-500"
+              style={{ transitionDelay: open ? `${i * 60}ms` : "0ms" }}
+            >
+              <Link
+                to={item.to}
+                onClick={() => setOpen(false)}
+                className={`block py-4 text-lg font-light tracking-[0.08em] border-b border-border/20 transition-colors duration-300 ${
+                  isActive(item.to) ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                }`}
               >
-                Smarta odlingssystem
-                <ChevronDown size={16} className={`transition-transform duration-300 ${growingOpen ? "rotate-180" : ""}`} />
-              </button>
-              {growingOpen && (
-                <div className="pl-4 pb-2 space-y-1">
-                  <Link to="/smart-garden" onClick={() => setOpen(false)} className="block py-2.5 text-sm font-light text-muted-foreground hover:text-foreground">
-                    Smart trädgård
-                  </Link>
-                  <Link to="/smart-greenhouse" onClick={() => setOpen(false)} className="block py-2.5 text-sm font-light text-muted-foreground hover:text-foreground">
-                    Smart växthus
-                  </Link>
-                  <Link to="/smart-garden-analysis" onClick={() => setOpen(false)} className="block py-2.5 text-sm font-light text-muted-foreground hover:text-foreground">
-                    Trädgårdsanalys
-                  </Link>
-                </div>
-              )}
-            </li>
-            <li>
-              <Link to="/smart-villa" onClick={() => setOpen(false)} className="block py-3 text-base font-light text-muted-foreground hover:text-foreground transition-colors">
-                Smart Villa
+                {item.label}
               </Link>
             </li>
-            <li>
-              <Link to="/ecovillage" onClick={() => setOpen(false)} className="block py-3 text-base font-light text-muted-foreground hover:text-foreground transition-colors">
-                Ekobyar
-              </Link>
-            </li>
-            <li>
-              <Link to="/om" onClick={() => setOpen(false)} className="block py-3 text-base font-light text-muted-foreground hover:text-foreground transition-colors">
-                Om
-              </Link>
-            </li>
-            <li>
-              <Link to="/kontakt" onClick={() => setOpen(false)} className="block py-3 text-base font-light text-muted-foreground hover:text-foreground transition-colors">
-                Kontakt
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 };
