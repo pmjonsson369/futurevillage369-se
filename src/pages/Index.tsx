@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import heroGreenhouse from "@/assets/hero-greenhouse-dusk.jpg";
-import greenhouseExperience from "@/assets/greenhouse-experience.jpg";
+import heroGreenhouse from "@/assets/hero-cinematic-greenhouse.jpg";
+import greenhouseExperience from "@/assets/greenhouse-interior-cinematic.jpg";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
