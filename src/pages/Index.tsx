@@ -165,25 +165,24 @@ const Index = () => (
         <img
           src={heroGreenhouse}
           alt="Modernt skandinaviskt växthus i kvällsljus med dimma"
-          className="w-full h-full object-cover scale-105 animate-fade-in-slow img-tone"
+          className="w-full h-full object-cover animate-slow-zoom img-tone"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-black/95" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.75)_100%)]" />
-        <div className="absolute inset-0 grain-overlay opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.85)_100%)]" />
+        <div className="absolute inset-0 grain-overlay opacity-30" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-32">
-        <p className="text-[10px] md:text-xs font-extralight tracking-[0.7em] uppercase text-white/70 mb-12 animate-fade-in">
+        <p className="text-[10px] md:text-xs font-extralight tracking-[0.7em] uppercase text-white/60 mb-10 animate-fade-in">
           369&nbsp;&nbsp;Future&nbsp;&nbsp;Village
         </p>
-        <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.05] mb-10 tracking-[-0.02em] animate-fade-in max-w-4xl mx-auto">
+        <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[8.5rem] font-serif text-white leading-[0.95] mb-10 tracking-[-0.035em] animate-fade-in max-w-5xl mx-auto text-glow">
           Smarta trädgårdar
           <br />
-          &amp; växthus för nordiskt liv
+          <span className="text-white/90">&amp; växthus</span>
         </h1>
-        <p className="text-base md:text-lg text-white/65 font-light mb-12 max-w-xl mx-auto leading-[1.9] animate-fade-in-slow">
-          Vi designar intelligenta odlingsmiljöer där teknologi,
-          vatten och natur samverkar i harmoni.
+        <p className="text-base md:text-lg text-white/60 font-light mb-14 max-w-md mx-auto leading-[1.9] animate-fade-in-slow">
+          Intelligenta odlingsmiljöer där teknologi och natur samverkar.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-slow">
           <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-7 h-auto">
@@ -196,7 +195,7 @@ const Index = () => (
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-fade-in-slow">
-        <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent" />
+        <div className="w-[1px] h-20 bg-gradient-to-b from-transparent via-white/50 to-transparent" />
       </div>
     </section>
 
