@@ -262,7 +262,7 @@ const Index = () => (
           </p>
           <Button asChild variant="outline" className="btn-premium border-white/20 text-white bg-white/[0.04] hover:bg-white/[0.12] hover:text-white px-8 py-6 h-auto backdrop-blur-md">
             <Link to="/smart-greenhouse" className="inline-flex items-center gap-3">
-              Läs mer <ArrowRight size={14} />
+              Upptäck mer <ArrowRight size={14} />
             </Link>
           </Button>
         </RevealSection>
