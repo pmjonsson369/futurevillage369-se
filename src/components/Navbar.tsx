@@ -7,7 +7,7 @@ const navItems = [
   { to: "/smart-garden", label: "Smart Garden" },
   { to: "/smart-greenhouse", label: "Smart Greenhouse" },
   { to: "/smart-growing-systems", label: "Regenerativa System" },
-  { to: "/ecovillage", label: "Vision" },
+  { to: "/ecovillage", label: "Future Living" },
   { to: "/kontakt", label: "Kontakt" },
 ];
 
