@@ -45,23 +45,28 @@ const gardenFeatures = [
 const services = [
   {
     icon: Leaf,
-    title: "Trädgårdsanalys",
-    desc: "En personlig analys med idéer för design, plantering och framtida förbättringar.",
-  },
-  {
-    icon: Cpu,
-    title: "Smart Garden System",
-    desc: "Automatiserad bevattning, miljösensorer och smart övervakning.",
+    title: "Smart trädgård",
+    desc: "Smarta lösningar för odling, bevattning och hållbar design.",
   },
   {
     icon: Thermometer,
-    title: "Smart Greenhouse",
-    desc: "Kontrollerade klimatsystem för längre odlingssäsonger och vinterodling.",
+    title: "Smart växthus",
+    desc: "Intelligenta växthus för nordiskt klimat och året-runt odling.",
+  },
+  {
+    icon: Droplets,
+    title: "Regenerativa system",
+    desc: "Vatten, natur och hållbara system i balans med miljön.",
   },
   {
     icon: Sprout,
-    title: "Regenerativ Design",
-    desc: "Regnvatteninsamling, odlingsbäddar och naturliga system i balans.",
+    title: "Trädgårdsanalys",
+    desc: "Personlig analys för smartare och vackrare utemiljöer.",
+  },
+  {
+    icon: Cpu,
+    title: "Future Living",
+    desc: "Framtidens livsmiljöer där teknologi och natur samverkar.",
   },
 ];
 
