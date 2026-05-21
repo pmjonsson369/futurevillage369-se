@@ -46,17 +46,17 @@ const services = [
   {
     icon: Leaf,
     title: "Smart trädgård",
-    desc: "Smarta trädgårdar där teknologi och natur samverkar.",
+    desc: "Smarta lösningar för odling, bevattning och hållbar design.",
   },
   {
     icon: Thermometer,
     title: "Smart växthus",
-    desc: "Premium-växthus för året-runt odling i nordiskt klimat.",
+    desc: "Intelligenta växthus för nordiskt klimat och året-runt odling.",
   },
   {
     icon: Droplets,
     title: "Regenerativa system",
-    desc: "Naturliga system för vatten, odling och hållbar balans.",
+    desc: "Vatten, natur och hållbara system i balans med miljön.",
   },
   {
     icon: Sprout,
@@ -66,7 +66,7 @@ const services = [
   {
     icon: Cpu,
     title: "Future Living",
-    desc: "Framtidens nordiska livsstil i harmoni med natur och teknologi.",
+    desc: "Framtidens livsmiljöer där teknologi och natur samverkar.",
   },
 ];
 
@@ -187,20 +187,20 @@ const Index = () => (
         <p className="text-[10px] md:text-xs font-extralight tracking-[0.7em] uppercase text-white/60 mb-10 animate-fade-in">
           369&nbsp;&nbsp;Future&nbsp;&nbsp;Village
         </p>
-        <h1 className="text-[3rem] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-serif text-white leading-[0.92] mb-10 tracking-[-0.04em] animate-fade-in max-w-5xl mx-auto text-glow">
-          Future Living
+        <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[8.5rem] font-serif text-white leading-[0.95] mb-10 tracking-[-0.035em] animate-fade-in max-w-5xl mx-auto text-glow">
+          Smarta trädgårdar
           <br />
-          <span className="text-white/90">Begins Here.</span>
+          <span className="text-white/90">&amp; växthus</span>
         </h1>
-        <p className="text-base md:text-lg text-white/65 font-light mb-14 max-w-md mx-auto leading-[1.9] animate-fade-in-slow">
-          Smarta trädgårdar för framtidens nordiska livsstil.
+        <p className="text-base md:text-lg text-white/60 font-light mb-14 max-w-md mx-auto leading-[1.9] animate-fade-in-slow">
+          Intelligenta odlingsmiljöer där teknologi och natur samverkar.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-slow">
           <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-7 h-auto">
-            <Link to="/smart-garden-analysis">Boka analys</Link>
+            <Link to="/smart-garden-analysis">Boka trädgårdsanalys</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="btn-premium border-white/20 text-white bg-white/[0.04] hover:bg-white/[0.12] hover:text-white px-10 py-7 h-auto backdrop-blur-md">
-            <Link to="/smart-garden">Utforska</Link>
+            <Link to="/smart-garden">Utforska Smart Garden</Link>
           </Button>
         </div>
       </div>
@@ -262,7 +262,7 @@ const Index = () => (
           </p>
           <Button asChild variant="outline" className="btn-premium border-white/20 text-white bg-white/[0.04] hover:bg-white/[0.12] hover:text-white px-8 py-6 h-auto backdrop-blur-md">
             <Link to="/smart-greenhouse" className="inline-flex items-center gap-3">
-              Upptäck mer <ArrowRight size={14} />
+              Läs mer <ArrowRight size={14} />
             </Link>
           </Button>
         </RevealSection>
