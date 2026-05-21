@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import heroGreenhouse from "@/assets/hero-cinematic-greenhouse.jpg";
 import greenhouseExperience from "@/assets/greenhouse-interior-cinematic.jpg";
-import heroVideo from "@/assets/hero-video.mp4";
+import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
@@ -169,7 +169,7 @@ const Index = () => (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <video
-          src={heroVideo}
+          src={heroVideoAsset.url}
           poster={heroGreenhouse}
           autoPlay
           muted
