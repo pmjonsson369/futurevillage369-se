@@ -46,17 +46,17 @@ const services = [
   {
     icon: Leaf,
     title: "Smart trädgård",
-    desc: "Smarta lösningar för odling, bevattning och hållbar design.",
+    desc: "Smarta trädgårdar där teknologi och natur samverkar.",
   },
   {
     icon: Thermometer,
     title: "Smart växthus",
-    desc: "Intelligenta växthus för nordiskt klimat och året-runt odling.",
+    desc: "Premium-växthus för året-runt odling i nordiskt klimat.",
   },
   {
     icon: Droplets,
     title: "Regenerativa system",
-    desc: "Vatten, natur och hållbara system i balans med miljön.",
+    desc: "Naturliga system för vatten, odling och hållbar balans.",
   },
   {
     icon: Sprout,
@@ -66,7 +66,7 @@ const services = [
   {
     icon: Cpu,
     title: "Future Living",
-    desc: "Framtidens livsmiljöer där teknologi och natur samverkar.",
+    desc: "Framtidens nordiska livsstil i harmoni med natur och teknologi.",
   },
 ];
 
