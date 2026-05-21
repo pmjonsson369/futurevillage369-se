@@ -187,20 +187,20 @@ const Index = () => (
         <p className="text-[10px] md:text-xs font-extralight tracking-[0.7em] uppercase text-white/60 mb-10 animate-fade-in">
           369&nbsp;&nbsp;Future&nbsp;&nbsp;Village
         </p>
-        <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[8.5rem] font-serif text-white leading-[0.95] mb-10 tracking-[-0.035em] animate-fade-in max-w-5xl mx-auto text-glow">
-          Smarta trädgårdar
+        <h1 className="text-[3rem] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-serif text-white leading-[0.92] mb-10 tracking-[-0.04em] animate-fade-in max-w-5xl mx-auto text-glow">
+          Future Living
           <br />
-          <span className="text-white/90">&amp; växthus</span>
+          <span className="text-white/90">Begins Here.</span>
         </h1>
-        <p className="text-base md:text-lg text-white/60 font-light mb-14 max-w-md mx-auto leading-[1.9] animate-fade-in-slow">
-          Intelligenta odlingsmiljöer där teknologi och natur samverkar.
+        <p className="text-base md:text-lg text-white/65 font-light mb-14 max-w-md mx-auto leading-[1.9] animate-fade-in-slow">
+          Smarta trädgårdar för framtidens nordiska livsstil.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-slow">
           <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-7 h-auto">
-            <Link to="/smart-garden-analysis">Boka trädgårdsanalys</Link>
+            <Link to="/smart-garden-analysis">Boka analys</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="btn-premium border-white/20 text-white bg-white/[0.04] hover:bg-white/[0.12] hover:text-white px-10 py-7 h-auto backdrop-blur-md">
-            <Link to="/smart-garden">Utforska Smart Garden</Link>
+            <Link to="/smart-garden">Utforska</Link>
           </Button>
         </div>
       </div>
