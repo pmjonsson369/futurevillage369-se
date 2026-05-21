@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import heroGreenhouse from "@/assets/hero-cinematic-greenhouse.jpg";
 import greenhouseExperience from "@/assets/greenhouse-interior-cinematic.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
@@ -162,12 +163,17 @@ const Index = () => (
     {/* HERO */}
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src={heroGreenhouse}
-          alt="Modernt skandinaviskt växthus i kvällsljus med dimma"
-          className="w-full h-full object-cover animate-slow-zoom img-tone"
+        <video
+          src={heroVideo}
+          poster={heroGreenhouse}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover img-tone"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.85)_100%)]" />
         <div className="absolute inset-0 grain-overlay opacity-30" />
       </div>
