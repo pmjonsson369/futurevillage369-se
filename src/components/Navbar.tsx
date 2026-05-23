@@ -4,9 +4,10 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
   { to: "/", label: "Hem" },
-  { to: "/smart-garden", label: "Smart Garden" },
-  { to: "/smart-greenhouse", label: "Smart Greenhouse" },
-  { to: "/smart-growing-systems", label: "Regenerativa System" },
+  { to: "/smart-garden", label: "Smart trädgård" },
+  { to: "/smart-greenhouse", label: "Smart växthus" },
+  { to: "/smart-growing-systems", label: "Regenerativa system" },
+  { to: "/smart-garden-analysis", label: "Trädgårdsanalys" },
   { to: "/ecovillage", label: "Future Living" },
   { to: "/kontakt", label: "Kontakt" },
 ];
