@@ -60,7 +60,7 @@ const sections: Section[] = [
 const Index = () => (
   <div className="bg-dark text-dark-foreground">
     {/* HERO — FULLSCREEN CINEMATIC VIDEO */}
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
       <div className="absolute inset-0">
         <video
           src={heroVideoAsset.url}
@@ -70,37 +70,41 @@ const Index = () => (
           loop
           playsInline
           preload="auto"
-          className="w-full h-full object-cover img-tone"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.85)_100%)]" />
-        <div className="absolute inset-0 grain-overlay opacity-30" />
+        {/* Cinematic dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/95" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.7)_100%)]" />
+        <div className="absolute inset-0 grain-overlay opacity-20" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-32">
-        <p className="text-[10px] md:text-xs font-extralight tracking-[0.7em] uppercase text-white/60 mb-10 animate-fade-in">
+      <div className="relative z-10 w-full max-w-4xl mx-auto text-center px-6 py-40 md:py-48">
+        <p className="text-[10px] md:text-[11px] font-light tracking-[0.8em] uppercase text-white/50 mb-12 md:mb-16 animate-fade-in">
           369&nbsp;&nbsp;Future&nbsp;&nbsp;Village
         </p>
-        <h1 className="text-[2.25rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[7rem] font-serif text-white leading-[1.04] mb-8 tracking-[-0.035em] animate-fade-in max-w-5xl mx-auto text-glow">
-          Framtidens smarta
+        <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[6.5rem] font-serif text-white leading-[1.05] mb-10 md:mb-12 tracking-[-0.035em] animate-fade-in max-w-4xl mx-auto text-glow font-light">
+          Framtidens smarta trädgårdar
           <br />
-          <span className="text-white/85">trädgårdar för nordiskt liv</span>
+          <span className="text-white/80">för nordiskt liv.</span>
         </h1>
-        <p className="text-base md:text-lg text-white/65 font-light mb-14 max-w-xl mx-auto leading-[1.9] animate-fade-in-slow">
+        <p className="text-base md:text-lg text-white/55 font-light mb-16 md:mb-20 max-w-xl mx-auto leading-[1.9] animate-fade-in-slow">
           Intelligenta odlingsmiljöer där teknologi, natur och design samverkar i harmoni.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-slow">
-          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-7 h-auto">
+        <div className="flex flex-col items-center gap-8 animate-fade-in-slow">
+          <Button asChild size="lg" className="btn-premium bg-white text-black hover:bg-white/90 px-12 py-7 h-auto">
             <Link to="/smart-garden-analysis">Boka Smart Trädgårdsanalys</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="btn-premium border-white/20 text-white bg-white/[0.04] hover:bg-white/[0.12] hover:text-white px-10 py-7 h-auto backdrop-blur-md">
-            <a href="#vision">Utforska visionen</a>
-          </Button>
+          <a
+            href="#vision"
+            className="text-xs tracking-[0.3em] uppercase text-white/60 hover:text-white transition-colors duration-500 font-light border-b border-white/20 hover:border-white/60 pb-1"
+          >
+            Utforska visionen
+          </a>
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-fade-in-slow">
-        <div className="w-[1px] h-20 bg-gradient-to-b from-transparent via-white/50 to-transparent" />
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 animate-fade-in-slow">
+        <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent" />
       </div>
     </section>
 
