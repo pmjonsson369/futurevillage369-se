@@ -33,20 +33,22 @@ const SmartGreenhouse = () => (
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/85" />
       </div>
       <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-32">
-        <p className="text-xs font-light tracking-[0.5em] uppercase text-white/55 mb-12">Smart växthus</p>
-        <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif text-white mb-14 leading-[0.95] tracking-[-0.02em]">
-          Odla året runt
-          <br />
-          – oavsett säsong
+        <p className="text-[11px] font-light tracking-[0.5em] uppercase text-white/60 mb-10">Smart växthus</p>
+        <h1 className="text-[2.75rem] md:text-7xl lg:text-8xl font-serif text-white mb-10 leading-[0.98] tracking-[-0.035em] font-light text-glow">
+          Premium-växthus för året-runt odling.
         </h1>
-        <p className="text-lg md:text-2xl text-white/75 max-w-2xl mx-auto leading-[1.8] font-light mb-14">
-          Ett växthus med klimatkontroll,
-          <br className="hidden md:block" />
-          automatiserad bevattning och smart övervakning.
+        <p className="text-base md:text-xl text-white/70 max-w-2xl mx-auto leading-[1.85] font-light mb-14">
+          Intelligent klimatkontroll, varm belysning och naturlig arkitektur — designat för nordiskt klimat.
+          Vinter utanför, varmt och grönt inne.
         </p>
-        <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-14 py-8 h-auto">
-          <Link to="/kontakt">Kontakta mig</Link>
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button asChild size="lg" className="btn-premium bg-white/95 text-black hover:bg-white px-12 py-7 h-auto">
+            <Link to="/smart-garden-analysis">Boka trädgårdsanalys</Link>
+          </Button>
+          <Button asChild size="lg" variant="outline" className="btn-premium border-white/30 text-white bg-white/[0.06] hover:bg-white/[0.14] hover:text-white px-12 py-7 h-auto backdrop-blur-md">
+            <Link to="/kontakt">Kontakta oss</Link>
+          </Button>
+        </div>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
         <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent" />

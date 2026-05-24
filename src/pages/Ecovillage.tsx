@@ -1,127 +1,61 @@
 import { Link } from "react-router-dom";
 import ecoImg from "@/assets/ecovillage.jpg";
+import brandingImg from "@/assets/section-branding.jpg";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 
-const workSteps = [
-  "Kartlägga vattenflöden",
-  "Koppla ihop odlingsytor",
-  "Installera sensorer",
-  "Följa upp och analysera",
-];
-
-const Ecovillage = () => (
+const FutureLiving = () => (
   <>
     {/* Hero */}
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[92vh] flex items-end overflow-hidden bg-black">
       <div className="absolute inset-0">
-        <img src={ecoImg} alt="Ecovillage" className="w-full h-full object-cover img-tone scale-105 animate-fade-in-slow" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-black/90" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.65)_100%)]" />
+        <img src={ecoImg} alt="Future Living — nordisk livsstil i harmoni med natur" className="w-full h-full object-cover img-tone scale-105 animate-fade-in-slow" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/95" />
       </div>
-      <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-32">
-        <p className="text-xs md:text-sm font-extralight tracking-[0.6em] uppercase text-white/80 mb-14 animate-fade-in">Ekobyar</p>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white mb-14 leading-[1.02] tracking-[-0.02em] animate-fade-in">
-          Smarta system för ekobyar
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 md:px-12 pb-24 md:pb-32">
+        <p className="text-[11px] font-light tracking-[0.5em] uppercase text-white/60 mb-10 animate-fade-in">Future Living</p>
+        <h1 className="text-[2.5rem] sm:text-5xl md:text-7xl lg:text-[5rem] font-serif text-white mb-10 leading-[1.04] tracking-[-0.035em] max-w-4xl text-glow font-light animate-fade-in">
+          Framtiden känns nära.
         </h1>
-        <p className="text-base md:text-lg text-white/75 max-w-2xl mx-auto leading-[2] font-light animate-fade-in-slow">
-          Vi hjälper ekobyar att förstå, förbättra
-          <br className="hidden md:block" />
-          och utveckla sina system – steg för steg.
+        <p className="text-base md:text-xl text-white/65 max-w-xl leading-[1.85] font-light animate-fade-in-slow">
+          Framtidens nordiska livsstil — i harmoni med natur och teknologi.
         </p>
       </div>
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
-        <div className="w-[1px] h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent" />
-      </div>
     </section>
 
-    {/* Vad det innebär */}
-    <section className="section-padding bg-background">
-      <RevealSection>
-        <div className="max-w-3xl mx-auto">
-          <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Vad det innebär</p>
-          <p className="text-lg text-muted-foreground leading-relaxed font-light">
-            Vi börjar med att förstå det som redan finns –
-            <br className="hidden md:block" />
-            vatten, odling och resurser –
-            <br className="hidden md:block" />
-            innan vi gör förändringar.
-          </p>
-        </div>
-      </RevealSection>
-    </section>
-
-    {/* Arbetssätt */}
-    <section className="section-padding bg-warm">
-      <RevealSection>
-        <div className="max-w-3xl mx-auto">
-          <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Arbetssätt</p>
-          <h2 className="text-3xl md:text-4xl font-serif mb-10 leading-tight">Börja smått. Lär över tid.</h2>
-          <ul className="space-y-4 mb-14">
-            {workSteps.map((step) => (
-              <li key={step} className="flex items-start gap-4 text-foreground font-light">
-                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                {step}
-              </li>
-            ))}
-          </ul>
-
-          <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Varför det är viktigt</p>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
-            Att förstå hur vatten, odling och resurser samverkar i en ekoby
-            <br className="hidden md:block" />
-            är avgörande för att kunna utveckla den på ett hållbart sätt.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-10 font-light">
-            Genom att kartlägga och arbeta med systemen som en helhet
-            <br className="hidden md:block" />
-            skapas bättre förutsättningar för både människor och miljö.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-light">
-            Det leder till:
-          </p>
-          <div className="space-y-5">
-            <p className="text-lg text-muted-foreground leading-relaxed font-light">
-              – En tydligare bild av hur vatten, odling och resurser
-              <br className="hidden md:block" />
-              faktiskt fungerar i praktiken
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed font-light">
-              – Mindre manuellt arbete genom smartare
-              <br className="hidden md:block" />
-              och mer automatiserade lösningar
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed font-light">
-              – Mer hållbara system som utvecklas
-              <br className="hidden md:block" />
-              och förbättras över tid
-            </p>
-          </div>
-        </div>
-      </RevealSection>
-    </section>
-
-    {/* Framtid */}
-    <section className="py-28 md:py-36 px-6 md:px-12 bg-dark">
+    {/* Vision */}
+    <section className="py-32 md:py-44 px-6 md:px-12 bg-dark">
       <RevealSection>
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-xs font-medium tracking-[0.3em] uppercase text-primary mb-6">Framtid</p>
-          <p className="text-xl md:text-2xl font-serif text-dark-foreground leading-relaxed mb-8">
-            Det som börjar som mindre pilotprojekt
-            <br className="hidden md:block" />
-            kan över tid utvecklas till fullt integrerade system
-            <br className="hidden md:block" />
-            för hela samhällen.
+          <p className="eyebrow mb-6">Visionen</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white leading-[1.15] mb-10 tracking-[-0.02em]">
+            Miljöer där människa, natur och intelligent teknologi rör sig som ett.
+          </h2>
+          <p className="text-base md:text-lg text-white/55 font-light leading-[1.9]">
+            Smarta trädgårdar. Intelligenta växthus. Regenerativa system.
+            Steg för steg bygger vi grunden för framtida communities byggda på lugn, självförsörjning och nordisk design.
           </p>
-          <p className="text-lg text-dark-muted leading-relaxed mb-14 font-light">
-            Genom att steg för steg förstå, testa och förbättra varje del
-            <br className="hidden md:block" />
-            skapas en stabil grund där vatten, odling och resurser
-            <br className="hidden md:block" />
-            samverkar i en fungerande helhet.
-          </p>
-          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-12 py-8 h-auto">
-            <Link to="/kontakt">Kontakta mig</Link>
+        </div>
+      </RevealSection>
+    </section>
+
+    {/* Closing CTA */}
+    <section className="relative py-40 md:py-56 px-6 md:px-12 overflow-hidden">
+      <div className="absolute inset-0">
+        <img src={brandingImg} alt="" loading="lazy" className="w-full h-full object-cover img-tone" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/75 to-black/95" />
+      </div>
+      <RevealSection>
+        <div className="relative max-w-2xl mx-auto text-center">
+          <p className="eyebrow mb-6 text-white/70">Pilot</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-white leading-[1.1] mb-12 tracking-[-0.02em]">
+            Vill du vara med från början?
+          </h2>
+          <Button asChild size="lg" className="btn-premium bg-white/95 text-black hover:bg-white px-12 py-7 h-auto">
+            <Link to="/kontakt" className="inline-flex items-center gap-3">
+              Ansök om pilotprojekt <ArrowRight size={16} />
+            </Link>
           </Button>
         </div>
       </RevealSection>
@@ -129,4 +63,4 @@ const Ecovillage = () => (
   </>
 );
 
-export default Ecovillage;
+export default FutureLiving;
