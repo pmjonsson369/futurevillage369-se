@@ -27,13 +27,15 @@ const SmartGardenAnalysis = () => (
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.65)_100%)]" />
       </div>
       <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-32">
-        <p className="text-xs md:text-sm font-extralight tracking-[0.6em] uppercase text-white/80 mb-14 animate-fade-in">Huvuderbjudande</p>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white mb-14 leading-[1.02] tracking-[-0.02em] animate-fade-in">Trädgårdsanalys</h1>
-        <p className="text-base md:text-lg text-white/75 max-w-2xl mx-auto leading-[2] mb-16 font-light animate-fade-in-slow">
-          Få en tydlig plan för din trädgård – med konkreta förslag som fungerar långsiktigt.
+        <p className="text-[11px] font-light tracking-[0.5em] uppercase text-white/60 mb-10 animate-fade-in">Trädgårdsanalys</p>
+        <h1 className="text-[2.5rem] md:text-6xl lg:text-7xl font-serif text-white mb-10 leading-[1.02] tracking-[-0.035em] font-light animate-fade-in text-glow">
+          Upptäck potentialen i din trädgård.
+        </h1>
+        <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-[1.9] mb-14 font-light animate-fade-in-slow">
+          En personlig analys av din trädgårds potential — med idéer för smart odling, vattenlösningar och framtidens hållbara utemiljöer.
         </p>
-        <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-14 py-8 h-auto">
-          <a href="#boka">Boka nu – 1 499 kr</a>
+        <Button asChild size="lg" className="btn-premium bg-white/95 text-black hover:bg-white px-12 py-7 h-auto">
+          <a href="#boka">Boka analys</a>
         </Button>
       </div>
     </section>

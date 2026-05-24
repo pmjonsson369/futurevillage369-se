@@ -22,37 +22,37 @@ type Section = {
 
 const sections: Section[] = [
   {
-    eyebrow: "Smart växthus",
-    title: "Intelligenta växthus för nordiskt klimat",
-    desc: "Premium-växthus med kontrollerat klimat, varm belysning och intelligenta sensorer — designade för att odla året om i nordisk natur.",
-    image: sectionGreenhouse,
-    alt: "Modernt svart växthus i nordisk skog vid skymning",
-    cta: { label: "Utforska Smart växthus", to: "/smart-greenhouse" },
+    eyebrow: "Smart trädgård",
+    title: "Smarta trädgårdar där teknologi och natur samverkar.",
+    desc: "Sensorer, intelligent bevattning och varm kvällsbelysning — en trädgård som lever av sig själv och växer i harmoni med dig.",
+    image: sectionSprinklers,
+    alt: "Premium smart trädgård i kvällsljus med integrerad belysning",
+    cta: { label: "Utforska Smart trädgård", to: "/smart-garden" },
   },
   {
-    eyebrow: "Smart garden systems",
-    title: "Smart bevattning & live-data",
-    desc: "Sensorer som mäter fukt, temperatur och ljus i realtid. Bevattningen anpassar sig automatiskt — du följer allt direkt i mobilen.",
-    image: sectionSprinklers,
-    alt: "Smart trädgård med automatisk bevattning i kvällsljus",
-    cta: { label: "Utforska Smart trädgård", to: "/smart-garden" },
+    eyebrow: "Smart växthus",
+    title: "Premium-växthus för året-runt odling i nordiskt klimat.",
+    desc: "Intelligent klimatkontroll, varm belysning och naturlig arkitektur. Vinter utanför — varmt, levande och grönt inne.",
+    image: sectionGreenhouse,
+    alt: "Modernt svart växthus i nordisk skog vid skymning",
+    cta: { label: "Upptäck Smart växthus", to: "/smart-greenhouse" },
     reverse: true,
   },
   {
-    eyebrow: "Smart garden setup",
-    title: "Premium Smart Garden Setup",
-    desc: "Skandinaviskt designade odlingsbäddar i matt svart, integrerad LED-belysning och intelligenta moduler — en komplett premium-installation.",
-    image: sectionGardenBeds,
-    alt: "Premium svarta odlingsbäddar med integrerad belysning",
-    cta: { label: "Boka trädgårdsanalys", to: "/smart-garden-analysis" },
-  },
-  {
     eyebrow: "Regenerativa system",
-    title: "Smart vattenhantering",
-    desc: "Slutna kretslopp för regnvatten och näring. Naturliga system i balans med miljön — för en självförsörjande framtid.",
+    title: "Naturliga system för vatten, odling och hållbar balans.",
+    desc: "Regnvatteninsamling, friska jordar och slutna kretslopp. Tysta, vackra system som arbetar med naturen — inte mot den.",
     image: sectionRainwater,
     alt: "Minimalistiskt svart regnvattensystem i nordisk trädgård",
-    cta: { label: "Läs mer om regenerativa system", to: "/smart-growing-systems" },
+    cta: { label: "Upptäck mer", to: "/smart-growing-systems" },
+  },
+  {
+    eyebrow: "Trädgårdsanalys",
+    title: "Personlig analys för smartare och vackrare utemiljöer.",
+    desc: "En exklusiv designupplevelse. Vi kartlägger din trädgårds potential och översätter den till en konkret plan — från första moodboard till färdig miljö.",
+    image: sectionGardenBeds,
+    alt: "Premium svarta odlingsbäddar med integrerad belysning",
+    cta: { label: "Boka analys", to: "/smart-garden-analysis" },
     reverse: true,
   },
 ];
@@ -72,28 +72,30 @@ const Index = () => (
           preload="auto"
           className="w-full h-full object-cover"
         />
-        {/* Subtle cinematic dark gradient — focus on video */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/90" />
       </div>
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6 md:px-12 pb-24 md:pb-32">
-        <h1 className="text-[2.75rem] sm:text-5xl md:text-7xl lg:text-[5.5rem] font-serif text-white leading-[1.02] mb-8 md:mb-10 tracking-[-0.035em] animate-fade-in max-w-4xl text-glow font-light">
-          Framtidens smarta trädgårdar för nordiskt liv.
+        <h1 className="text-[2.5rem] sm:text-5xl md:text-7xl lg:text-[5.5rem] font-serif text-white leading-[1.02] mb-8 md:mb-10 tracking-[-0.035em] animate-fade-in max-w-4xl text-glow font-light">
+          Smarta trädgårdar för framtidens nordiska livsstil.
         </h1>
-        <p className="text-base md:text-xl text-white/65 font-light mb-12 md:mb-14 max-w-xl leading-[1.8] animate-fade-in-slow">
-          Där teknologi, natur och design samverkar i harmoni.
+        <p className="text-base md:text-xl text-white/70 font-light mb-12 md:mb-14 max-w-xl leading-[1.8] animate-fade-in-slow">
+          Intelligenta växthus, hållbar design och smarta odlingsmiljöer i harmoni med naturen.
         </p>
-        <div className="animate-fade-in-slow">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 animate-fade-in-slow">
           <Button asChild size="lg" className="btn-premium bg-white/95 text-black hover:bg-white px-10 py-7 h-auto">
-            <Link to="/smart-garden-analysis">Boka Smart Trädgårdsanalys</Link>
+            <Link to="/smart-garden-analysis">Boka trädgårdsanalys</Link>
+          </Button>
+          <Button asChild size="lg" variant="outline" className="btn-premium border-white/30 text-white bg-white/[0.06] hover:bg-white/[0.14] hover:text-white px-10 py-7 h-auto backdrop-blur-md">
+            <Link to="/smart-garden">Utforska Smart trädgård</Link>
           </Button>
         </div>
       </div>
     </section>
 
     {/* CINEMATIC ALTERNATING SECTIONS */}
-    {sections.map((s, i) => (
-      <section key={s.title} className="relative py-28 md:py-40 px-6 md:px-12 bg-dark overflow-hidden">
+    {sections.map((s) => (
+      <section key={s.title} className="relative py-24 md:py-40 px-6 md:px-12 bg-dark overflow-hidden">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <RevealSection delay={s.reverse ? 120 : 0}>
             <div className={`relative aspect-[4/5] md:aspect-[5/6] rounded-3xl overflow-hidden ring-1 ring-white/10 ${s.reverse ? "md:order-2" : ""}`}>
@@ -109,7 +111,7 @@ const Index = () => (
           <RevealSection delay={s.reverse ? 0 : 120}>
             <div className={s.reverse ? "md:order-1" : ""}>
               <p className="eyebrow mb-5">{s.eyebrow}</p>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white leading-[1.08] mb-8 tracking-[-0.02em]">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-white leading-[1.08] mb-8 tracking-[-0.02em]">
                 {s.title}
               </h2>
               <p className="text-base md:text-lg text-white/60 font-light leading-[1.9] mb-10 max-w-lg">
@@ -128,18 +130,22 @@ const Index = () => (
       </section>
     ))}
 
-    {/* VISION */}
+    {/* VISION — FUTURE LIVING */}
     <section id="vision" className="relative py-32 md:py-44 px-6 md:px-12 bg-dark">
       <RevealSection>
         <div className="max-w-2xl mx-auto text-center">
-          <p className="eyebrow mb-6">Visionen</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white leading-[1.15] mb-8">
-            Det här är bara början.
+          <p className="eyebrow mb-6">Future Living</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white leading-[1.15] mb-8 tracking-[-0.02em]">
+            Framtidens nordiska livsstil i harmoni med natur och teknologi.
           </h2>
-          <p className="text-base md:text-lg text-white/60 font-light leading-[1.9]">
-            369 Future Village bygger steg för steg mot framtidens självförsörjande
-            miljöer där natur, teknologi och mänskligt välmående samverkar.
+          <p className="text-base md:text-lg text-white/55 font-light leading-[1.9] mb-10">
+            Det här är bara början. Steg för steg bygger vi miljöer där människa, natur och intelligent teknologi rör sig som ett.
           </p>
+          <Button asChild variant="outline" className="btn-premium border-white/20 text-white bg-white/[0.04] hover:bg-white/[0.12] hover:text-white px-8 py-6 h-auto backdrop-blur-md">
+            <Link to="/ecovillage" className="inline-flex items-center gap-3">
+              Se visionen <ArrowRight size={14} />
+            </Link>
+          </Button>
         </div>
       </RevealSection>
     </section>
@@ -158,7 +164,7 @@ const Index = () => (
             <br />
             smart living brand
           </h2>
-          <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-7 h-auto">
+          <Button asChild size="lg" className="btn-premium bg-white/95 text-black hover:bg-white px-12 py-7 h-auto">
             <Link to="/kontakt" className="inline-flex items-center gap-3">
               Ansök om pilotprojekt <ArrowRight size={16} />
             </Link>

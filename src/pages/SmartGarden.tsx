@@ -37,17 +37,15 @@ const SmartGarden = () => (
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/85" />
       </div>
       <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-32">
-        <p className="text-xs font-light tracking-[0.5em] uppercase text-white/55 mb-12">Smart trädgård</p>
-        <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif text-white mb-14 leading-[0.95] tracking-[-0.02em]">
-          Ett enklare sätt
-          <br />
-          att odla
+        <p className="text-[11px] font-light tracking-[0.5em] uppercase text-white/60 mb-10">Smart trädgård</p>
+        <h1 className="text-[2.75rem] md:text-7xl lg:text-8xl font-serif text-white mb-10 leading-[0.98] tracking-[-0.035em] font-light text-glow">
+          Smarta trädgårdar för framtidens nordiska liv.
         </h1>
-        <p className="text-lg md:text-2xl text-white/75 max-w-2xl mx-auto leading-[1.8] font-light mb-14">
-          Här samverkar natur och teknik.
+        <p className="text-base md:text-xl text-white/70 max-w-2xl mx-auto leading-[1.85] font-light mb-14">
+          Sensorer, intelligent bevattning och varm kvällsbelysning — en trädgård som lever av sig själv och växer i harmoni med dig.
         </p>
-        <Button asChild size="lg" className="btn-premium bg-primary text-primary-foreground hover:bg-primary/90 text-base px-14 py-8 h-auto">
-          <Link to="/smart-garden-analysis">Boka Trädgårdsanalys</Link>
+        <Button asChild size="lg" className="btn-premium bg-white/95 text-black hover:bg-white px-12 py-7 h-auto">
+          <Link to="/smart-garden-analysis">Boka trädgårdsanalys</Link>
         </Button>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
